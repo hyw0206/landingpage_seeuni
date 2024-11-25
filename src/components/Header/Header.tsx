@@ -7,12 +7,26 @@ export default function Header() {
     <Styled.HeaderWrapper>
       <Styled.HeaderContentWrapper>
 
-      <Styled.HeaderLogo src="/image/SEEUNI_Logo.png"/>
-      <Styled.HeaderItem>About us</Styled.HeaderItem>
-      <Styled.HeaderItem>K-Beauty Export</Styled.HeaderItem>
-      <Styled.HeaderItem>ODM Service</Styled.HeaderItem>
-      <Styled.HeaderItem>Our Brands</Styled.HeaderItem>
-      <Styled.HeaderItem>Contact us</Styled.HeaderItem>
+      <Styled.HeaderLogo src="/image/SEEUNI_Logo.png" alt="SEEUNI Logo"/>
+      <Styled.HeaderItem>
+        <Styled.HeaderItemText>About us</Styled.HeaderItemText>
+      </Styled.HeaderItem>
+      <Styled.HeaderItem>
+        <Styled.HeaderItemText>K-Beauty Export</Styled.HeaderItemText>
+      </Styled.HeaderItem>
+      <Styled.HeaderItem>
+        <Styled.HeaderItemText>ODM Service</Styled.HeaderItemText>
+      </Styled.HeaderItem>
+      <Styled.HeaderItem>
+        <Styled.HeaderItemText>Our Brands</Styled.HeaderItemText>
+      </Styled.HeaderItem>
+      <Styled.HeaderCountryItem>
+        <img src="/image/Header/Korean.png" alt="Change Korean"/>
+      </Styled.HeaderCountryItem>
+      <Styled.HeaderCountryItem>
+        <img src="/image/Header/English.png" alt="Change English"/>
+      </Styled.HeaderCountryItem>
+   
       </Styled.HeaderContentWrapper>
       
     </Styled.HeaderWrapper>
