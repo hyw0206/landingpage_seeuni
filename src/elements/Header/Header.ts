@@ -10,48 +10,67 @@ export const HeaderWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 120px;
-
+  z-index: 9999;
   background: #ffffff;
   box-sizing: border-box;
 `;
 
 export const HeaderContentWrapper = styled.div`
-  width: 1050px;
   min-width: 1050px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-right: 90px;
 `
-
 
 export const HeaderLogo = styled.img`  
   height: 43px;
+  margin-bottom: 39px;
+  margin-right: 177px;
 `;
 
 export const HeaderItem = styled.div`
-  margin: 0 0 0 36px;
-  font-weight: 200;
+  height: 100%;
+  padding: 0 11px;
+  
   box-sizing: border-box;
-  position: relative;
+  
 
   &:hover {
-    &::after {
-      border-bottom: 3px solid #8fd6bd;
+    background: #E0E0E0;
+    div {
+      font-weight: 400;
+    }
+    div::after {
+      border-bottom: 3px solid #33D62C;
     }
   }
+  
+`;
+
+export const HeaderItemText = styled.div`
+  position: relative;
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 61px;
   &::after {
     content: "";
     position: absolute;
     display: block;
     width: 100%;
     left: 0;
-    bottom: -8px;
+    bottom: -9px;
     border-bottom: 3px solid transparent;
     transition: border-bottom 0.8s ease;
   }    
-`;
-
+`
+export const HeaderCountryItem = styled.div`
+  
+  padding: 0 11px;
+  img {
+    margin-bottom: 38px;
+  }
+`
 
 // px -> 4px (width, height ...)
 // font
