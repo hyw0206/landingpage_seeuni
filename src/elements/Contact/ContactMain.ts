@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const ContactMainWrapper = styled.div`
   width: 100%;
-  height: 100%; // height 수정
+  height: 650px; // height 수정
   background: url("/image/Contact/ContactMain.png");
   background-repeat: no-repeat;
   background-size: cover;
