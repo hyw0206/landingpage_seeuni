@@ -1,12 +1,13 @@
 import BrandInfo from "./BrandInfo";
 import BrandList from "./BrandList";
 
+import * as Styled from "elements/Brand/Brand"
+
 export default function Brand() {
   return (
-    <div>
-      Brand
+    <Styled.BrandWrapper>
       <BrandInfo />
       <BrandList />
-    </div>
+    </Styled.BrandWrapper>
   )
 }
