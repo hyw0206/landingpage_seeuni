@@ -13,7 +13,7 @@ export const ContactMainWrapper = styled.div`
 export const ContactMainTextWrapper = styled.div`
   width: 940px;
   margin: 236px auto 0 auto;
-`
+`;
 
 export const ContactMainText = styled.div`
   width: 929px;
@@ -22,4 +22,4 @@ export const ContactMainText = styled.div`
   font-weight: 900;
   line-height: 120%;
   color: rgba(255, 255, 255, 0.7);  
-`
+`;

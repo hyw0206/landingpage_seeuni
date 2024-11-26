@@ -1,11 +1,12 @@
-import * as Styled from 'elements/Contact/Contact';
+import * as Styled from 'elements/Contact/ContactArticle';
 
 export default function ContactArticle() {
 
   return (
-    <div>
-      Contact Article
-
-    </div>
+    <Styled.ContactArticleWrapper>
+      <Styled.ContactArticleTextWrapper>
+          <Styled.ContactArticleTitleText>To Contact us.</Styled.ContactArticleTitleText>
+      </Styled.ContactArticleTextWrapper>
+    </Styled.ContactArticleWrapper>
   )
 }
