@@ -42,5 +42,5 @@ export const ODMMenuPartnerBox = styled.div`
 export const ODMMenuPartnerBoxImage = styled.img`
   width: 169px;
   height: 82px;
-  margin-right: 43px;
+  margin-right: 40px;
 `
