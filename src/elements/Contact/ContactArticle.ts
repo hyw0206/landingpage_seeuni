@@ -9,10 +9,6 @@ export const ContactArticleWrapper = styled.div`
     height: 604px;
 `;
 
-export const ContactArticleTextWrapper = styled.div`
-    width: 838px;
-    margin: 68px auto 0 auto;
-`;
 
 export const ContactArticleTitleText = styled.div`
   width: 285px;
