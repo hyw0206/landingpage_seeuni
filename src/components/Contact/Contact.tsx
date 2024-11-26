@@ -1,13 +1,14 @@
-import ContactArticle from "./ContactArticlet";
+import * as Styled from 'elements/Contact/Contact';
+
+import ContactArticle from "./ContactArticle";
 import ContactMain from "./ContactMain";
 
 export default function Contact() {
 
   return (
-    <div>
-      Contact
+    <Styled.ContactWrapper>
       <ContactMain />
       <ContactArticle />
-    </div>
+    </Styled.ContactWrapper>
   )
 }
