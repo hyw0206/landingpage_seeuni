@@ -16,17 +16,18 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const HeaderContentWrapper = styled.div`
-  min-width: 1050px;
+  min-width: 940px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 `
 
-export const HeaderLogo = styled.img`  
+export const HeaderLogo = styled.img`
+  width: 210px;
   height: 43px;
+  margin-right: 180px;
   margin-bottom: 39px;
-  margin-right: 177px;
 `;
 
 export const HeaderItem = styled.div`
