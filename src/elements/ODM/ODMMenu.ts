@@ -21,7 +21,7 @@ export const ODMMenuText = styled.div`
   width: 970px;
   height: 189px;
   margin-top: 63px;
-  padding-bottom: 143px;
+  // 필요 없는 속성 삭제 (padding)
   line-height: 38px;
   font-size: 32px;
   font-weight: 200;

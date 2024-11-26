@@ -17,8 +17,7 @@ export const ODMInfoDetailWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 70px;
-  /* height: 120px; */
+  height: 538px; // margin top 삭제, height 추가
 `;
 
 export const ODMInfoTitle = styled.div`
@@ -26,6 +25,19 @@ export const ODMInfoTitle = styled.div`
   font-size: 40px;
   font-weight: 600;
   color: white;
+`
+
+export const ODMArticleImage = styled.img`
+  width: 433px;
+  height: 278px;
+  margin-right: 24px; // Line margin left 삭제, 그만큼 추가
+`
+
+export const ODMArticleLine = styled.hr`
+  width: 1px;
+  height: 278px;
+  background-color: white;
+  margin-right: 16px;
 `
 
 export const ODMInfoArticleText = styled.div`
@@ -36,20 +48,6 @@ export const ODMInfoArticleText = styled.div`
   text-align: left;
   line-height: 38px;
   color: white;
-  margin-left: 18px;
-`
-
-export const ODMArticleLine = styled.hr`
-  width: 1px;
-  height: 278px;
-  margin-left: 8px;
-  background-color: white;
-`
-
-export const ODMArticleImage = styled.img`
-  width: 433px;
-  height: 278px;
-  margin-right: 18px;
 `
 
 export const ODMArticleTextBold = styled.span`
