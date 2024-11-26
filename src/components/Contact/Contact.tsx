@@ -1,6 +1,6 @@
 import * as Styled from 'elements/Contact/Contact';
 
-import ContactArticle from "./ContactArticlet";
+import ContactArticle from "./ContactArticle";
 import ContactMain from "./ContactMain";
 
 export default function Contact() {
