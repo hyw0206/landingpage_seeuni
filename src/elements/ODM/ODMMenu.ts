@@ -6,27 +6,28 @@ export const ODMMenuWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 738px;
-  background-color: #218FAC;
+  background-color: #FFFFFF;
 `;
 
 export const ODMMenuTitle = styled.div`
-  margin-top: 143px;
-  font-size: 40px;
+  width: 472px;
+  height: 27px;
+  margin: 46px 0px 39px 0px;
+  font-size: 36px;
   font-weight: 600;
-  color: white;
+  line-height: 42px;
+  color: #46454A;
 `;
 
 export const ODMMenuText = styled.div`
-  width: 970px;
-  height: 189px;
-  margin-top: 63px;
-  padding-bottom: 143px;
-  line-height: 38px;
-  font-size: 32px;
+  width: 911px;
+  height: 128px;
+  margin: 39px 502px 74px 507px;
+  line-height: 27px;
+  font-size: 23px;
   font-weight: 200;
-  text-align: center;
-  color: white;
+  text-align: left;
+  color: #46454A;
 `;
 
 export const ODMMenuPartnerBox = styled.div`
@@ -35,8 +36,7 @@ export const ODMMenuPartnerBox = styled.div`
   align-items: center;
   width: 100%;
   height: 110px;
-  margin-top: 63px;
-  background-color: #FFFFFF;
+  background-color: #F9B9FF;
 `;
 
 export const ODMMenuPartnerBoxImage = styled.img`

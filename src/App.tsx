@@ -12,8 +12,8 @@ function App() {
       <Header />
       <Info />
       <Business />
-      <ODM />
       <Brand />
+      <ODM />
       <Contact />
       <Footer />
     </>

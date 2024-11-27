@@ -7,7 +7,9 @@ export default function Brand() {
   return (
     <Styled.BrandWrapper>
       <BrandInfo />
-      <BrandList />
+      <Styled.BrandListWrapper>
+        <BrandList />
+      </Styled.BrandListWrapper>
     </Styled.BrandWrapper>
   )
 }

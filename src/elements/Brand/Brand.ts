@@ -4,5 +4,10 @@ export const BrandWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 520px;
 `
+
+export const BrandListWrapper = styled.div`
+  width: 100%;
+  height: 1613px;
+  background-color: #FFE6F9;
+`;

@@ -10,7 +10,10 @@ export default function ODMMenu() {
         <Styled.ODMMenuPartnerBoxImage style={{width: '266px', height: '82px'}} src="/image/ODM/manufacturer02.png"/>
         <Styled.ODMMenuPartnerBoxImage style={{width: '104px', height: '82px'}} src="/image/ODM/manufacturer04.png"/>
       </Styled.ODMMenuPartnerBox>
-      <Styled.ODMMenuText>We collaborate with leading companies in K-beauty manufacturing to deliver products of the highest quality. Together with top experts across various fields, we ensure innovation and excellence. Our partnerships bring exceptional beauty solutions to the global market.</Styled.ODMMenuText>
+      <Styled.ODMMenuText>We collaborate with leading companies in K-beauty manufacturing to deliver
+        products of the highest quality. <br />
+        Together with top experts across various fields, we ensure innovation and <br />excellence. 
+        <br /> Our partnerships bring exceptional beauty solutions to the global market.</Styled.ODMMenuText>
     </Styled.ODMMenuWrapper>
   )
 }
