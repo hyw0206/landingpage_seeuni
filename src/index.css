@@ -97,9 +97,12 @@ hr {
 }
 
 body {
-  width: 100%;
-  min-width: 940px;
+  min-width: 980px;
   height: 100%;
   margin: 0;
   font-family: "S-CoreDream";
+}
+
+* {
+  box-sizing: border-box;
 }

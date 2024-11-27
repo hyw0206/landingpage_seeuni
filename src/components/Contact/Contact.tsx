@@ -1,13 +1,16 @@
-import ContactArticle from "./ContactArticlet";
+import * as Styled from 'elements/Contact/Contact';
+
+import ContactArticle from "./ContactArticle";
+import ContactRequset from "./ContactRequest";
 import ContactMain from "./ContactMain";
 
 export default function Contact() {
 
   return (
-    <div>
-      Contact
+    <Styled.ContactWrapper>
       <ContactMain />
+      <ContactRequset/>
       <ContactArticle />
-    </div>
+    </Styled.ContactWrapper>
   )
 }

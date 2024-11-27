@@ -12,37 +12,33 @@ export const HeaderWrapper = styled.div`
   height: 120px;
   z-index: 9999;
   background: #ffffff;
-  box-sizing: border-box;
 `;
 
 export const HeaderContentWrapper = styled.div`
-  min-width: 1050px;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-`
+  align-items: center;
+`;
 
-export const HeaderLogo = styled.img`  
+
+export const HeaderLogo = styled.img`
+  width: 210px;
   height: 43px;
-  margin-bottom: 39px;
-  margin-right: 177px;
+  margin-right: 102px;
+  @media (max-width: 960px) {
+    margin-right: clamp(0px, calc(180px - ((960px - 100vw))), 180px);
+  }
 `;
 
 export const HeaderItem = styled.div`
   height: 100%;
   padding: 0 11px;
-  
-  box-sizing: border-box;
-  
-
   &:hover {
     background: #E0E0E0;
-    div {
-      font-weight: 400;
-    }
     div::after {
-      border-bottom: 3px solid #33D62C;
+      border-bottom: 4px solid #ED74DA;
     }
   }
   
@@ -60,7 +56,7 @@ export const HeaderItemText = styled.div`
     width: 100%;
     left: 0;
     bottom: -9px;
-    border-bottom: 3px solid transparent;
+    border-bottom: 4px solid transparent;
     transition: border-bottom 0.8s ease;
   }    
 `
@@ -68,19 +64,11 @@ export const HeaderCountryItem = styled.div`
   
   padding: 0 11px;
   img {
-    margin-bottom: 38px;
+    margin-top: 22px;
+    width: 29px;
+    height: 19px;
+  }
+  &:last-child {
+    padding-right: 0;
   }
 `
-
-// px -> 4px (width, height ...)
-// font
-// css 속성 순서
-// display (flex) width height mar pad bor text color ~~~
-// styled 이름 규칙 Header
-// 함수 이름 규칙 onClickUpCount
-
-// git main <- 메인 코드 
-
-// 나 헤더 개발할거임
-// git header <- 여기에 업로드.
-// merge

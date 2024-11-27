@@ -1,9 +1,11 @@
+import * as Styled from "elements/Contact/ContactMain"
+
+
 export default function ContactMain() {
 
   return (
-    <div>
-      Contact Main
-
-    </div>
+    <Styled.ContactMainWrapper>
+        <Styled.ContactMainText>Contact<br />Us</Styled.ContactMainText>
+    </Styled.ContactMainWrapper>
   )
 }

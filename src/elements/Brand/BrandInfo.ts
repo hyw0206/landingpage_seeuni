@@ -22,7 +22,7 @@ export const BrandInfoTitle = styled.div`
 
 export const BrandInfoTextWrapper = styled.div`
   display: flex;
-  margin: 63px auto 143px auto;
+  margin: 63px auto 0 auto; // 불필요한 마진 삭제
 `
 
 export const BrandInfoText = styled.div`
