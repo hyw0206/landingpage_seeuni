@@ -20,12 +20,18 @@ export default function Header() {
       <Styled.HeaderItem>
         <Styled.HeaderItemText>Our Brands</Styled.HeaderItemText>
       </Styled.HeaderItem>
-      <Styled.HeaderCountryItem>
-        <img src="/image/Header/Korean.png" alt="Change Korean"/>
-      </Styled.HeaderCountryItem>
-      <Styled.HeaderCountryItem>
-        <img src="/image/Header/English.png" alt="Change English"/>
-      </Styled.HeaderCountryItem>
+      <Styled.HeaderItem>
+        <Styled.HeaderItemText>Contact us</Styled.HeaderItemText>
+      </Styled.HeaderItem>
+      <div style={{display: "flex", flexDirection: "column"}}>
+        <Styled.HeaderCountryWrapper>
+          <Styled.HeaderCountryLogo src="/image/Header/language.png" alt="change language" />
+          <Styled.HeaderCountryLogo src="/image/Header/arrow_drop_down.png" alt="view change language" />
+        </Styled.HeaderCountryWrapper>
+        <Styled.HeaderCountryText>
+          English
+        </Styled.HeaderCountryText>
+      </div>
    
       </Styled.HeaderContentWrapper>
       
