@@ -26,7 +26,7 @@ export const HeaderContentWrapper = styled.div`
 export const HeaderLogo = styled.img`
   width: 210px;
   height: 43px;
-  margin-right: 180px;
+  margin-right: 102px;
   @media (max-width: 960px) {
     margin-right: clamp(0px, calc(180px - ((960px - 100vw))), 180px);
   }

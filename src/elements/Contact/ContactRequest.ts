@@ -5,7 +5,7 @@ export const ContactRequestWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 690px;
+  height: 682px;
   background-color: rgba(243, 234, 234, 1);
 `;
 

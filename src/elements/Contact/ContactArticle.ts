@@ -1,25 +1,21 @@
-import exp from "constants";
 import styled from "styled-components";
 
 export const ContactArticleWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 604px;
-  padding-left: 479px;
-`;
-
-export const ContactArticleTitleWrapper = styled.div`
-  width: 300px;
-  margin-top: 68px;
 `;
 
 export const ContactArticleTitle = styled.div`
+  margin-top: 68px;
   font-size: 40px;
   font-weight: 600;
 `;
 
 export const ContactArticleContentWrapper = styled.div`
   display: flex;
-  width: 977px;
   margin-top: 26px;
 `;
 
@@ -33,7 +29,7 @@ export const ContactArticleContentInfo = styled.div`
   color: #46454A;
   text-decoration: underline;
   text-decoration-color: #ED74DA;
-  
+
 `;
 
 export const ContactArticleContentInfoTextWrapper = styled.div`
