@@ -6,4 +6,4 @@ export default function InfoMain() {
       <Styled.InfoMainText>Bringing Korean Beauty to the World</Styled.InfoMainText>
     </Styled.InfoMainWrapper>
   )
-}
+} 

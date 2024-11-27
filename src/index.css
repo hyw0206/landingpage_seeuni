@@ -97,9 +97,15 @@ hr {
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   min-width: 940px;
   height: 100%;
   margin: 0;
   font-family: "S-CoreDream";
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+
+* {
+  box-sizing: border-box;
 }
