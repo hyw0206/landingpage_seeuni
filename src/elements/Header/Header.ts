@@ -60,6 +60,21 @@ export const HeaderItemText = styled.div`
     transition: border-bottom 0.8s ease;
   }    
 `
+
+
+export const HeaderCountryWrapper = styled.div`
+  display: flex;
+  margin-top: 25px;
+`
+export const HeaderCountryLogo = styled.img`
+  width: 24px;
+  height: 24px;
+`
+export const HeaderCountryText = styled.div`
+  font-size: 10px;
+`
+
+
 export const HeaderCountryItem = styled.div`
   
   padding: 0 11px;
