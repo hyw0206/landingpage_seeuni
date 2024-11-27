@@ -5,7 +5,7 @@ export const ODMInfoWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-top: 1100px; */
+  /* margin-top: 1100px;;;;;;; */
   padding-bottom: 20px;
   width: 100%;
   height: 538px;
