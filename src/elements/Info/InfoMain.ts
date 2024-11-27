@@ -18,6 +18,8 @@ export const InfoMainText = styled.div`
   font-weight: 900;
   line-height: 86px;
   color: rgba(255, 255, 255, 0.7); 
-
+  @media (max-width: 940px) {
+    margin-left: 0;
+  }
 `
 

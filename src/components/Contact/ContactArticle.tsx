@@ -3,14 +3,10 @@ import ContactMap from "./ContactMap";
 
 export default function ContactArticle() {
 
-  // 초기 중심 위치 설정
-  const position = [36.17, 127.83]
 
   return (
     <Styled.ContactArticleWrapper>
-      <Styled.ContactArticleTitleWrapper>
         <Styled.ContactArticleTitle>To Contact Us.</Styled.ContactArticleTitle>
-      </Styled.ContactArticleTitleWrapper>
 
       <Styled.ContactArticleContentWrapper>
         <Styled.ContactArticleContentInfoWrapper>
