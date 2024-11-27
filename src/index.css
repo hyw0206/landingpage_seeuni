@@ -97,13 +97,10 @@ hr {
 }
 
 body {
-  width: 100vw;
-  min-width: 940px;
+  min-width: 980px;
   height: 100%;
   margin: 0;
   font-family: "S-CoreDream";
-  overflow-x: auto;
-  overflow-y: scroll;
 }
 
 * {
