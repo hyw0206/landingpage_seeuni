@@ -27,18 +27,6 @@ export const ODMInfoTitle = styled.div`
   font-weight: 600;
 `
 
-export const ODMArticleImage = styled.img`
-  width: 433px;
-  height: 278px;
-  margin-right: 24px; // Line margin left 삭제, 그만큼 추가
-`
-
-export const ODMArticleLine = styled.hr`
-  width: 1px;
-  height: 278px;
-  background-color: white;
-  margin-right: 16px;
-`
 
 export const ODMInfoArticleText = styled.div`
   width: 472px;
