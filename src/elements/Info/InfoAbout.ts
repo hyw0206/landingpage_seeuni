@@ -6,20 +6,20 @@ export const InfoAboutWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 538px;
+  height: 443px;
 `
 
 export const InfoAboutTitle = styled.div`
-  margin-top: 84px;
+  margin-top: 61px;
   font-size: 40px;
   font-weight: 500;
 `
 
 export const InfoAboutSummaryWrapper = styled.div`
   display: flex;
-  margin-top: 66px;
+  margin-top: 56px;
   > div {
-    margin-right: 90px;
+    margin-right: 95px;
       &:last-child {
       margin-right: 0;
     }
@@ -32,7 +32,8 @@ export const InfoAboutSummaryItem = styled.div`
 `
 export const InfoAboutSummaryItemTitle = styled.div`
   font-size: 24px;
-  font-weight: 300;
+  font-family: "Roboto";
+  font-weight: 500;
 `
 export const InfoAboutSummaryItemLine = styled.hr`
   margin-top: 12px;
@@ -48,10 +49,15 @@ export const InfoAboutSummaryItemArticle = styled.div`
 
 export const InfoAboutArticle = styled.div`
   width: 940px;
-  margin-top: 46px;
-  font-size: 22px;
+  margin-top: 40px;
+  font-size: 18px;
+  font-family: "Roboto";
   font-weight: 300;
   letter-spacing: 0.1em; // 2.2px
-  text-align: center;
+  text-align: left;
   line-height: 26px;
+`
+export const InfoAboutArticleBoldText = styled.span`
+  font-weight: 500;
+  color: #ED74DA;
 `
