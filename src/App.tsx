@@ -5,11 +5,17 @@ import ODM from "components/ODM/ODM";
 import Brand from "components/Brand/Brand";
 import Contact from "components/Contact/Contact";
 import Footer from "components/Footer/Footer";
+import { useState } from "react";
 
 function App() {
+
+  const [language, setLanguage] = useState<"English" | "Korean">("English");
   return (
     <>
-      <Header />
+      <Header 
+        language={language}
+        setLanguage={setLanguage}
+      />
       <Info />
       <Business />
       <Brand />

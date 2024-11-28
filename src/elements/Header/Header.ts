@@ -72,6 +72,8 @@ export const HeaderCountryLogo = styled.img`
 `
 export const HeaderCountryText = styled.div`
   font-size: 10px;
+  cursor: pointer;
+  user-select: none;
 `
 
 
