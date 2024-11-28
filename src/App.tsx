@@ -16,7 +16,9 @@ function App() {
         language={language}
         setLanguage={setLanguage}
       />
-      <Info />
+      <Info 
+        language={language}
+      />
       <Business />
       <Brand />
       <ODM />

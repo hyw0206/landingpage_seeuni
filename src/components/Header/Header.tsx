@@ -56,7 +56,7 @@ export default function Header({language, setLanguage} :headerProps) {
             <Styled.HeaderCountryText
               onClick={onClickSetLanguage}
             >
-              {language === "English" ? "English" : "Korean"}
+              {language === "English" ? "ENGLISH" : "KOREAN"}
             </Styled.HeaderCountryText>
           )  
         }

@@ -7,36 +7,40 @@ export const BusinessExportWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 538px;
+  height: 443px;
 `
 
 export const BusinessExportTitle = styled.div`
-  margin-top: 115px;
+  margin-top: 55px;
   font-size: 40px;
   font-weight: 600;
 `
 
 export const BusinessExportArticleWrapper = styled.div`
   display: flex;
-  margin-top: 28px;
+  align-items: center;
+  margin-top: 33px;
 `
 
 export const BusinessExportArticleText = styled.div`
-  width: 510px;
-  font-size: 32px;
+  width: 356px;
+  font-size: 20px;
   font-weight: 300;
-  text-align: right;
-  line-height: 38px;
+  font-family: "Roboto";
+  font-style: italic;
+  line-height: 120%;
 `
 
 export const BusinessExportArticleLine = styled.hr`
-  width: 1px;
-  height: 333px;
-  margin-left: 8px;
+  width: 2px;
+  height: 257px;
+  margin-left: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 0;
 `
 
 export const BusinessExportArticleImage = styled.img`
-  width: 437px;
-  height: 333px;
-  margin-left: 18px;
+  width: 337px;
+  height: 257px;
+  margin-left: 54px;
 `

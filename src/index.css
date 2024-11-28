@@ -53,47 +53,114 @@ hr {
 @font-face {
   font-family: "S-CoreDream";
   font-weight: 100;
-  src: url("/public/fonts/SCDream1.otf") format("opentype");
+  src: url("/public/fonts/SCDream/SCDream1.otf") format("opentype");
 }
 @font-face {
   font-family: "S-CoreDream";
   font-weight: 200;
-  src: url("/public/fonts/SCDream2.otf") format("opentype");
+  src: url("/public/fonts/SCDream/SCDream2.otf") format("opentype");
 }
 @font-face {
   font-family: "S-CoreDream";
   font-weight: 300;
-  src: url("/public/fonts/SCDream3.otf") format("opentype");
+  src: url("/public/fonts/SCDream/SCDream3.otf") format("opentype");
 }
 @font-face {
   font-family: "S-CoreDream";
   font-weight: 400;
-  src: url("/public/fonts/SCDream4.otf") format("opentype");
+  src: url("/public/fonts/SCDream/SCDream4.otf") format("opentype");
 }
 @font-face {
   font-family: "S-CoreDream";
   font-weight: 500;
-  src: url("/public/fonts/SCDream5.otf") format("opentype");
+  src: url("/public/fonts/SCDream/SCDream5.otf") format("opentype");
 }
 @font-face {
   font-family: "S-CoreDream";
   font-weight: 600;
-  src: url("/public/fonts/SCDream6.otf") format("opentype");
+  src: url("/public/fonts/SCDream/SCDream6.otf") format("opentype");
 }
 @font-face {
   font-family: "S-CoreDream";
   font-weight: 700;
-  src: url("/public/fonts/SCDream7.otf") format("opentype");
+  src: url("/public/fonts/SCDream/SCDream7.otf") format("opentype");
 }
 @font-face {
   font-family: "S-CoreDream";
   font-weight: 800;
-  src: url("/public/fonts/SCDream8.otf") format("opentype");
+  src: url("/public/fonts/SCDream/SCDream8.otf") format("opentype");
 }
 @font-face {
   font-family: "S-CoreDream";
   font-weight: 900;
-  src: url("/public/fonts/SCDream9.otf") format("opentype");
+  src: url("/public/fonts/SCDream/SCDream9.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 100;
+  src: url("/public/fonts/Roboto/Roboto-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url("/public/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("/public/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url("/public/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("/public/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 900;
+  src: url("/public/fonts/Roboto/Roboto-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 100;
+  font-style: italic;
+  src: url("/public/fonts/Roboto/Roboto-ThinItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  src: url("/public/fonts/Roboto/Roboto-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: italic;
+  src: url("/public/fonts/Roboto/Roboto-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: italic;
+  src: url("/public/fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: italic;
+  src: url("/public/fonts/Roboto/Roboto-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-style: italic;
+  src: url("/public/fonts/Roboto/Roboto-BlackItalic.ttf") format("truetype");
 }
 
 body {
