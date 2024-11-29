@@ -17,14 +17,16 @@ export const ODMInfoDetailWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 44px;
 `;
 
 export const ODMInfoTitle = styled.div`
-  margin-top: 55px;
+  width: 291px;
+  height: 38px;
+  margin: 55px 815px 42px 814px;
   font-size: 40px;
   line-height: 47px;
   font-weight: 600;
+  color: #46454A;
 `
 
 
