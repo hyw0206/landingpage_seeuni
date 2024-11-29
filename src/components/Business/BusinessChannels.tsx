@@ -5,9 +5,69 @@ export default function BusinessChannels() {
 
   const pinData = [
     {
+      "fileName": "Pin_Canada.png",
+      "top": "61",
+      "left": "79"
+    },
+    {
       "fileName": "Pin_America.png",
-      "top": "141",
-      "left": "168"
+      "top": "113",
+      "left": "135"
+    },
+    {
+      "fileName": "Pin_Mexico.png",
+      "top": "146",
+      "left": "98"
+    },
+    {
+      "fileName": "Pin_Brazil.png",
+      "top": "207",
+      "left": "200"
+    },
+    {
+      "fileName": "Pin_Turkey.png",
+      "top": "140",
+      "left": "265"
+    },
+    {
+      "fileName": "Pin_Qatar.png",
+      "top": "171",
+      "left": "318"
+    },
+    {
+      "fileName": "Pin_RepSouthAfrica.png",
+      "top": "239",
+      "left": "318"
+    },
+    {
+      "fileName": "Pin_Germany.png",
+      "top": "55",
+      "left": "366"
+    },
+    {
+      "fileName": "Pin_Vietnam.png",
+      "top": "140",
+      "left": "452"
+    },
+    {
+      "fileName": "Pin_Indonesia.png",
+      "top": "181",
+      "left": "474"
+    },
+    {
+      "fileName": "Pin_Russia.png",
+      "top": "43",
+      "left": "480"
+    },
+    {
+      "fileName": "Pin_Japan.png",
+      "top": "114",
+      "left": "512"
+    },
+    {
+      "fileName": "Pin_Australia.png",
+      "top": "227",
+      "left": "506"
     },
   ]
   return (
