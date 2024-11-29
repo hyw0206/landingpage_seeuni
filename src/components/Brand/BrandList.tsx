@@ -104,23 +104,26 @@ export default function BrandList() {
 
   return (
     <Styled.BrandListContainer>
-      {items.map((item) => (
-        <Styled.BrandListBox>
-          <Styled.BrandListItem>
-            <Styled.BrandListImage src={"/image/Brand/" + item.fileName}
-              width={item.width}
-              height={item.height} />
-          </Styled.BrandListItem>
-          <Styled.BrandListLabel style={{ 
-            height: "75px" ,
-            fontSize: "32px", 
-            fontWeight: "500",
-            marginTop: "15px", 
-            lineHeight: "38px"}}>
+      <Styled.BrandListInner>
+        {items.map((item) => (
+          <Styled.BrandListBox>
+            <Styled.BrandListItem>
+              <Styled.BrandListImage src={"/image/Brand/" + item.fileName}
+                width={item.width}
+                height={item.height} />
+            </Styled.BrandListItem>
+            <Styled.BrandListLabel style={{
+              height: "75px",
+              fontSize: "32px",
+              fontWeight: "500",
+              marginTop: "15px",
+              lineHeight: "38px"
+            }}>
               {item.label}
-          </Styled.BrandListLabel>
-        </Styled.BrandListBox>
-      ))}
+            </Styled.BrandListLabel>
+          </Styled.BrandListBox>
+        ))}
+      </Styled.BrandListInner>
     </Styled.BrandListContainer>
   );
 };

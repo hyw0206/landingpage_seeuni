@@ -6,7 +6,7 @@ export default function ODMMenu() {
       "fileName": "kolmarLogo.png",
       "width": "169",
       "height": "82",
-      "margin": "14px 48px 14px 476px"
+      "margin": "14px 48px 14px 45px"
     },
 
     {

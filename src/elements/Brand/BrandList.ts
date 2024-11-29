@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 // Flex 컨테이너 스타일링
 export const BrandListContainer = styled.div`
+    width: 100%; // 화면 전체 너비
+    background-color: #FFE6F9;
+`;
+
+export const BrandListInner = styled.div`
   display: flex;
   flex-wrap: wrap; // 여러 줄로 아이템 배치
   justify-content: center; // 아이템을 중앙 정렬

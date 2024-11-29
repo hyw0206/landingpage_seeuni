@@ -32,7 +32,7 @@ export const ODMMenuText = styled.div`
 
 export const ODMMenuPartnerBox = styled.div`
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 110px;
