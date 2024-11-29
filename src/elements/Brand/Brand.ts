@@ -8,6 +8,6 @@ export const BrandWrapper = styled.div`
 
 export const BrandListWrapper = styled.div`
   width: 100%;
-  height: 1613px;
+  height: 1652px;
   background-color: #FFE6F9;
 `;

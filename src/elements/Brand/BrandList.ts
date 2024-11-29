@@ -12,6 +12,7 @@ export const BrandListContainer = styled.div`
   margin: 0 auto; // 컨테이너를 화면 중앙에 정렬
   margin-top: 110px;
   background-color: #FFE6F9;
+  margin-bottom: 110px;
 `;
 
 export const BrandListBox = styled.div`

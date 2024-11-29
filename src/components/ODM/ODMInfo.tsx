@@ -9,7 +9,7 @@ export default function ODMInfo() {
         <Styled.ODMArticleLine />
         <Styled.ODMInfoArticleText>
           We provide custom <Styled.ODMArticleTextBold>ODM</Styled.ODMArticleTextBold>
-          <Styled.ODMArticleTextBold>services</Styled.ODMArticleTextBold> to <br /> meet the unique  
+          <Styled.ODMArticleTextBold> services</Styled.ODMArticleTextBold> to <br /> meet the unique  
           demands of each market. <br /> By collaborating with clients,
           SEEUNI creates <Styled.ODMArticleTextBold>high-quality</Styled.ODMArticleTextBold>, affordable
           <Styled.ODMArticleTextBold> beauty products </Styled.ODMArticleTextBold>
