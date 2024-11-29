@@ -5,19 +5,19 @@ export const BrandInfoWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 538px;
+  height: 350px;
 `
 
 export const BrandInfoTitleWrapper = styled.div`
   display: flex;
-  margin-top: 143px;
+  margin-top: 77px;
 `
 
 export const BrandInfoTitle = styled.div`
   display: flex;
   text-align: center;
   font-size: 40px;
-  font-weight: bolder;
+  font-weight: bold;
 `
 
 export const BrandInfoTextWrapper = styled.div`

@@ -12,11 +12,15 @@ export const ContactMainWrapper = styled.div`
 
 
 export const ContactMainText = styled.div`
-  height: 274px;
-  margin: 236px 0 0 490px; // 불필요한 엘리먼트 삭제, 마진 옮김
+  margin: 226px 0 0 488px;
+  width: 467px;
+  margin: 234px 0 0 calc((100vw - 1920px) / 2 + 484px);
   font-size: 72px;
   font-weight: 900;
   line-height: 120%;
-  letter-spacing: 0.1em; // 누락된 속성 추가
-  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7); 
+  @media (max-width: 940px) {
+    margin-left: 0;
+  }
 `

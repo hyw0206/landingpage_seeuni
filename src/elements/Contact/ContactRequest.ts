@@ -10,7 +10,6 @@ export const ContactRequestWrapper = styled.div`
 `;
 
 export const ContactRequestTitleText = styled.div`
-  display: flex;
   text-align: center;
   margin-top: 35px;
   font-size: 40px;
@@ -25,10 +24,14 @@ export const ContactInputWrapper = styled.div`
   width: 908px;
 `;
 
-export const ContactRequestText = styled.div`
+export const ContactRequestTextWrapper = styled.div`
+  display: flex;
   margin-top: 19px;
   color: rgba(130, 130, 130, 1);
   font-size: 22px; 
+`;
+
+export const ContactRequestText = styled.div`
   text-decoration: underline;
 `;
 
