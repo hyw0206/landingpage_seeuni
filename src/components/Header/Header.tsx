@@ -8,9 +8,13 @@ type headerProps = {
 export default function Header({language, setLanguage} :headerProps) {
   const [showSetLanguage, setShowSetLanguage] = useState<boolean>(false);
 
-  const onClickSetLanguage = () => {
-    if (language === "English") setLanguage("Korean");
+  const onClickSetLanguageEnglish = () => {
+    if (language === "English") return;
     else setLanguage("English");
+  }
+  const onClickSetLanguageKorean = () => {
+    if (language === "Korean") return;
+    setLanguage("Korean");
   }
 
   const onClickSetShowButton = () => {
@@ -53,11 +57,18 @@ export default function Header({language, setLanguage} :headerProps) {
         {
           showSetLanguage &&
           (
+            <>
             <Styled.HeaderCountryText
-              onClick={onClickSetLanguage}
+              onClick={onClickSetLanguageEnglish}
             >
-              {language === "English" ? "ENGLISH" : "KOREAN"}
+              English
             </Styled.HeaderCountryText>
+            <Styled.HeaderCountryText
+              onClick={onClickSetLanguageKorean}
+            >
+              Korean
+            </Styled.HeaderCountryText>
+            </>
           )  
         }
         

@@ -89,6 +89,8 @@ export const HeaderCountryText = styled.div`
   font-weight: 500;
   cursor: pointer;
   user-select: none;
+  margin-bottom: 2px;
+  
 `
 
 
