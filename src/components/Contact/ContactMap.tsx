@@ -2,6 +2,7 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import { languageProps } from "shared/type/commonType"
 
 // Import marker icons
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
@@ -24,7 +25,10 @@ const ContactMap: React.FC = () => {
                 center={position}
                 zoom={17}
                 scrollWheelZoom={true}
-                style={{ height: '387px', width: '387px' }}
+                style={{
+                    height: '387px', // 부모 컨테이너가 크기를 정의하도록 설정
+                    width: '387px',  // 부모 폭에 맞춤
+                }}
             >
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -32,7 +36,7 @@ const ContactMap: React.FC = () => {
                 />
                 <Marker position={position}>
                     <Popup>
-                       회사명 : Seeuni <br /> Easily customizable.
+                        Seeuni H.Q
                     </Popup>
                 </Marker>
             </MapContainer>
