@@ -16,7 +16,7 @@ L.Icon.Default.mergeOptions({
 });
 
 const ContactMap: React.FC = () => {
-    const position: [number, number] = [37.508130825061535, 127.08910217572478]; // 타입스크립트에서 명시적으로 타입 설정
+    const position: [number, number] = [37.5107895236526, 127.078947683988]; // 타입스크립트에서 명시적으로 타입 설정
 
     return (
         <div style={{ height: '500px' }}>
