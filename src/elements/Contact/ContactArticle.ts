@@ -17,6 +17,14 @@ export const ContactArticleTitle = styled.div`
 export const ContactArticleContentWrapper = styled.div`
   display: flex;
   margin-top: 26px;
+  flex-wrap: wrap;
+  @media (max-width: 960px) {
+    width: 960px;
+    justify-content: center;
+    > div {
+      margin-bottom: 20px;
+    }
+  }
 `;
 
 export const ContactArticleContentInfoWrapper = styled.div`
@@ -44,8 +52,12 @@ export const ContactArticleContentInfoText = styled.div`
 `;
 
 export const ContactArticleContentMapWrapper = styled.div`
-  width: 387px;
-  height: 387px;
-  background-color: gray;
   margin-left: 76px;
+  @media (max-width: 960px) {
+    margin-left: 0;
+    width: 100%; /* 가로 폭을 전체로 설정 */
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+  }
 `;
+
