@@ -1,13 +1,14 @@
+import { languageProps } from "shared/type/commonType";
 import BrandInfo from "./BrandInfo";
 import BrandList from "./BrandList";
 
 import * as Styled from "elements/Brand/Brand"
 
-export default function Brand() {
+export default function Brand({language}: languageProps) {
   return (
     <Styled.BrandWrapper>
-      <BrandInfo />
-        <BrandList />
+      <BrandInfo language={language}/>
+      <BrandList />
     </Styled.BrandWrapper>
   )
 }

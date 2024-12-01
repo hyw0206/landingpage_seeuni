@@ -21,7 +21,9 @@ export const BrandListInner = styled.div`
 `;
 
 export const BrandListBox = styled.div`
-
+  :hover {
+  border: 1px solid black;
+  }
 `;
 
 // 각 아이템 스타일링
@@ -35,6 +37,9 @@ export const BrandListItem = styled.div`
   text-align: center;
   background-color: #fff;
   cursor: pointer;
+  :hover {
+    border: none;
+  }
 `;
 
 // 이미지 스타일링

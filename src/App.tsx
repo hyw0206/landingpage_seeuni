@@ -35,10 +35,10 @@ function App() {
         <Business />    
       </FullpageSection>
       <FullpageSection>
-        <Brand />
+        <Brand language={language}/>
       </FullpageSection>
       <FullpageSection>
-        <ODM />
+        <ODM language={language}/>
       </FullpageSection>
       <FullpageSection>
         <div style={{display: "flex", flexDirection: "column", width: "100%"}}>
