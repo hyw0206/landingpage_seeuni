@@ -3,7 +3,7 @@ import * as Styled from "elements/Business/BusinessExport"
 export default function BusinessExport() {
 
   return (
-    <Styled.BusinessExportWrapper>
+    <Styled.BusinessExportWrapper id="K-BeautyExport">
       <Styled.BusinessExportTitle>K- Beauty Export.</Styled.BusinessExportTitle>
       <Styled.BusinessExportArticleWrapper>
         <Styled.BusinessExportArticleText>

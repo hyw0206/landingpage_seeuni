@@ -2,7 +2,7 @@ import * as Styled from "elements/Info/InfoAbout"
 
 export default function InfoAbout() {
   return (
-    <Styled.InfoAboutWrapper>
+    <Styled.InfoAboutWrapper id="About-us">
       <Styled.InfoAboutTitle>About us.</Styled.InfoAboutTitle>
       <Styled.InfoAboutSummaryWrapper>
         <Styled.InfoAboutSummaryItem>

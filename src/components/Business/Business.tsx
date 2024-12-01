@@ -7,13 +7,14 @@ import * as Styled from "elements/Business/Business"
 
 
 export default function Business() {
-
   return (
+    <>
     <Styled.BusinessWrapper>
       <BusinessMain />
       <BusinessPreview />
       <BusinessExport />
       <BusinessChannels />
     </Styled.BusinessWrapper>
+    </>
   )
 }

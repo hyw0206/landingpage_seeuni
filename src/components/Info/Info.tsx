@@ -7,6 +7,8 @@ import * as Styled from "elements/Info/Info";
 
 export default function Info({language}: languageProps) {
   return (
+    <>
+    <Styled.GlobalStyle />
     <Styled.InfoWrapper>
       <InfoMain 
         language={language}
@@ -14,5 +16,6 @@ export default function Info({language}: languageProps) {
       <InfoAbout />
       <InfoMessage />
     </Styled.InfoWrapper>
+    </>
   )
 }
