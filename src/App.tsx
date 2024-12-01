@@ -1,3 +1,4 @@
+'use client';
 import Header from "components/Header/Header";
 import Info from "components/Info/Info";
 import Business from "components/Business/Business";
@@ -6,9 +7,13 @@ import Brand from "components/Brand/Brand";
 import Contact from "components/Contact/Contact";
 import Footer from "components/Footer/Footer";
 import { useState } from "react";
-
+import {
+  FullpageContainer,
+  FullpageSection,
+} from '@shinyongjun/react-fullpage';
+import '@shinyongjun/react-fullpage/css';
 function App() {
-
+  const [activeIndex, setActiveIndex] = useState<number>(0);
   const [language, setLanguage] = useState<"English" | "Korean">("English");
   return (
     <>
@@ -16,16 +21,34 @@ function App() {
         language={language}
         setLanguage={setLanguage}
       />
-      <Info
-        language={language}
-      />
-      <Business />
-      <Brand />
-      <ODM />
-      <Contact
-        language={language}
-      />
-      <Footer />
+      <FullpageContainer
+        activeIndex={activeIndex}
+        setActiveIndex={setActiveIndex}
+        transitionDuration={500}
+      > 
+      <FullpageSection>
+        <Info
+          language={language}
+        />
+      </FullpageSection>
+      <FullpageSection>
+        <Business />    
+      </FullpageSection>
+      <FullpageSection>
+        <Brand />
+      </FullpageSection>
+      <FullpageSection>
+        <ODM />
+      </FullpageSection>
+      <FullpageSection>
+        <div style={{display: "flex", flexDirection: "column", width: "100%"}}>
+          <Contact
+            language={language}
+          />
+          <Footer />
+        </div>
+      </FullpageSection>
+    </FullpageContainer>
     </>
   );
 }
