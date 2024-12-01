@@ -13,7 +13,6 @@ export default function InfoMain({language}: languageProps) {
     }
   }
 
-
   return (
     <Styled.InfoMainWrapper>
       <Styled.InfoMainText>{parse(textData[language].InfoMainText)}</Styled.InfoMainText>

@@ -9,24 +9,40 @@ export const ODMMenuWrapper = styled.div`
   background-color: #FFFFFF;
 `;
 
-export const ODMMenuTitle = styled.div`
+export const ODMMenuTitleWrapper = styled.div`
   width: 472px;
   height: 27px;
   margin: 55px 815px 42px 814px;
+  display: flex;
+  justify-content: center;
+  ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
+`;
+
+export const ODMMenuTitle = styled.p`
   font-size: 36px;
   font-weight: 600;
   line-height: 42px;
   color: #46454A;
 `;
 
-export const ODMMenuText = styled.div`
-  width: 911px;
+export const ODMMenuTextWrapper = styled.div`
+  width: 836px;
   height: 128px;
-  margin: 39px 502px 74px 507px;
-  line-height: 27px;
+  margin: 39px 539px 74px 545px;
+  ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
+`;
+
+export const ODMMenuText = styled.p`
   font-size: 23px;
-  font-weight: 200;
+  font-weight: 300;
   text-align: left;
+  line-height: 27px;
   color: #46454A;
 `;
 

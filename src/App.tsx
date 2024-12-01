@@ -20,8 +20,8 @@ function App() {
         language={language}
       />
       <Business />
-      <Brand />
-      <ODM />
+      <Brand language={language}/>
+      <ODM language={language}/>
       <Contact
         language={language}
       />

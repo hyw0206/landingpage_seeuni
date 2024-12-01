@@ -14,7 +14,7 @@ export default function ContactMain({language}: languageProps) {
   }
 
   return (
-    <Styled.ContactMainWrapper>
+    <Styled.ContactMainWrapper id="Contact-us">
         <Styled.ContactMainText>{parse(textData[language].ContactMainText)}</Styled.ContactMainText>
     </Styled.ContactMainWrapper>
   )

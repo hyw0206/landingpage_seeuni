@@ -1,6 +1,11 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
-
+export const GlobalStyle = createGlobalStyle`
+  html {
+    scroll-behavior: smooth; /* 부드러운 스크롤 이동 효과 */
+    scroll-padding-top: 120px;
+  }
+`;
 
 export const BusinessExportWrapper = styled.div`
   display: flex;

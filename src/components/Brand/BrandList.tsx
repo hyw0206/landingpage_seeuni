@@ -1,4 +1,5 @@
 import BrandItem from "./BrandItem";
+import { Link } from "react-router-dom";
 import * as Styled from "elements/Brand/BrandList";
 
 export default function BrandList() {
@@ -11,6 +12,7 @@ export default function BrandList() {
       "height": "91",
       "label": `daymellow’
       (데이멜로우)`,
+      "route": "/daymellow"
     },
 
     {
@@ -19,6 +21,7 @@ export default function BrandList() {
       "height": "91",
       "label": `Dinto 
       (딘토)`,
+      "route": "/dinto"
     },
 
     {
@@ -117,7 +120,8 @@ export default function BrandList() {
               fontSize: "32px",
               fontWeight: "500",
               marginTop: "15px",
-              lineHeight: "38px"
+              lineHeight: "38px",
+              border: "none"
             }}>
               {item.label}
             </Styled.BrandListLabel>

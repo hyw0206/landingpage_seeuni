@@ -9,26 +9,36 @@ export const BrandInfoWrapper = styled.div`
 `
 
 export const BrandInfoTitleWrapper = styled.div`
+  /* width: 234px; */
+  height: 38px;
   display: flex;
-  margin-top: 77px;
+  text-align: center;
+  margin: 77px 4px 62px 0px;
+  ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
 `
 
 export const BrandInfoTitle = styled.div`
-  display: flex;
-  text-align: center;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 600;
+  line-height: 47px;
 `
 
 export const BrandInfoTextWrapper = styled.div`
-  display: flex;
-  margin: 63px auto 77 auto; // 불필요한 마진 삭제
+  width: 962px;
+  height: 96px;
+  ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
 `
 
-export const BrandInfoText = styled.div`
-  width: 962px;
-  font-size: 32px;
-  font-weight: 400;
+export const BrandInfoText = styled.p`
+  font-size: 24px;
+  font-weight: 200;
   text-align: center;
-  line-height: 38px;
+  line-height: 28px;
+
 `
