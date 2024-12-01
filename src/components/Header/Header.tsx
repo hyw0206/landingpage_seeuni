@@ -16,7 +16,6 @@ export default function Header({language, setLanguage} :headerProps) {
     if (language === "Korean") return;
     setLanguage("Korean");
   }
-
   const onClickSetShowButton = () => {
     setShowSetLanguage(!showSetLanguage);
   }
@@ -24,22 +23,21 @@ export default function Header({language, setLanguage} :headerProps) {
   return (
     <Styled.HeaderWrapper>
       <Styled.HeaderContentWrapper>
-
       <Styled.HeaderLogo src="/image/SEEUNI_Logo.png" alt="SEEUNI Logo"/>
       <Styled.HeaderItem>
-        <Styled.HeaderItemText>About us</Styled.HeaderItemText>
+        <a href='#About-us' style={{textDecoration: 'none', color: '#000000'}}><Styled.HeaderItemText>About us</Styled.HeaderItemText></a>
       </Styled.HeaderItem>
       <Styled.HeaderItem>
-        <Styled.HeaderItemText>K-Beauty Export</Styled.HeaderItemText>
+        <a href='#K-BeautyExport' style={{textDecoration: 'none', color: '#000000'}}><Styled.HeaderItemText>K-Beauty Export</Styled.HeaderItemText></a>
       </Styled.HeaderItem>
       <Styled.HeaderItem>
-        <Styled.HeaderItemText>ODM Service</Styled.HeaderItemText>
+        <a href='#Our-Brands' style={{textDecoration: 'none', color: '#000000'}}><Styled.HeaderItemText>Our Brands</Styled.HeaderItemText></a>
       </Styled.HeaderItem>
       <Styled.HeaderItem>
-        <Styled.HeaderItemText>Our Brands</Styled.HeaderItemText>
+        <a href='#ODM-Service' style={{textDecoration: 'none', color: '#000000'}}><Styled.HeaderItemText>ODM Service</Styled.HeaderItemText></a>
       </Styled.HeaderItem>
       <Styled.HeaderItem>
-        <Styled.HeaderItemText>Contact us</Styled.HeaderItemText>
+        <a href='#Contact-us' style={{textDecoration: 'none', color: '#000000'}}><Styled.HeaderItemText>Contact us</Styled.HeaderItemText></a>
       </Styled.HeaderItem>
       <div style={{display: "flex", flexDirection: "column"}}>
         <Styled.HeaderCountryWrapper>
