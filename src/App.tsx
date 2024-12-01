@@ -12,17 +12,19 @@ function App() {
   const [language, setLanguage] = useState<"English" | "Korean">("English");
   return (
     <>
-      <Header 
+      <Header
         language={language}
         setLanguage={setLanguage}
       />
-      <Info 
+      <Info
         language={language}
       />
       <Business />
       <Brand language={language}/>
       <ODM language={language}/>
-      <Contact />
+      <Contact
+        language={language}
+      />
       <Footer />
     </>
   );
