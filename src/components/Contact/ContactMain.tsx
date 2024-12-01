@@ -1,5 +1,6 @@
 import * as Styled from "elements/Contact/ContactMain"
 import { languageProps } from "shared/type/commonType"
+import parse from "html-react-parser";
 
 export default function ContactMain({language}: languageProps) {
 
@@ -14,7 +15,7 @@ export default function ContactMain({language}: languageProps) {
 
   return (
     <Styled.ContactMainWrapper id="Contact-us">
-        <Styled.ContactMainText>{textData[language].ContactMainText}</Styled.ContactMainText>
+        <Styled.ContactMainText>{parse(textData[language].ContactMainText)}</Styled.ContactMainText>
     </Styled.ContactMainWrapper>
   )
 }
