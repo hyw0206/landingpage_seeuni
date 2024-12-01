@@ -16,14 +16,14 @@ L.Icon.Default.mergeOptions({
 });
 
 const ContactMap: React.FC = () => {
-    const position: [number, number] = [37.508130825061535, 127.08910217572478]; // 타입스크립트에서 명시적으로 타입 설정
+    const position: [number, number] = [37.5107895236526, 127.078947683988]; // 타입스크립트에서 명시적으로 타입 설정
 
     return (
         <div style={{ height: '500px' }}>
             <MapContainer
                 center={position}
                 zoom={17}
-                scrollWheelZoom={false}
+                scrollWheelZoom={true}
                 style={{ height: '387px', width: '387px' }}
             >
                 <TileLayer
@@ -32,7 +32,7 @@ const ContactMap: React.FC = () => {
                 />
                 <Marker position={position}>
                     <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
+                       회사명 : Seeuni <br /> Easily customizable.
                     </Popup>
                 </Marker>
             </MapContainer>
