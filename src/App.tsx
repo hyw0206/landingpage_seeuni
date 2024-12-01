@@ -21,34 +21,34 @@ function App() {
         language={language}
         setLanguage={setLanguage}
       />
-      <FullpageContainer
+      {/* <FullpageContainer
         activeIndex={activeIndex}
         setActiveIndex={setActiveIndex}
         transitionDuration={500}
       > 
-      <FullpageSection>
+      <FullpageSection> */}
         <Info
           language={language}
         />
-      </FullpageSection>
-      <FullpageSection>
+      {/* </FullpageSection>
+      <FullpageSection> */}
         <Business />    
-      </FullpageSection>
-      <FullpageSection>
+      {/* </FullpageSection>
+      <FullpageSection> */}
         <Brand language={language}/>
-      </FullpageSection>
-      <FullpageSection>
+      {/* </FullpageSection>
+      <FullpageSection> */}
         <ODM language={language}/>
-      </FullpageSection>
-      <FullpageSection>
-        <div style={{display: "flex", flexDirection: "column", width: "100%"}}>
+      {/* </FullpageSection>
+      <FullpageSection> */}
+        {/* <div style={{display: "flex", flexDirection: "column", width: "100%"}}> */}
           <Contact
             language={language}
           />
           <Footer />
-        </div>
+        {/* </div>
       </FullpageSection>
-    </FullpageContainer>
+    </FullpageContainer> */}
     </>
   );
 }
