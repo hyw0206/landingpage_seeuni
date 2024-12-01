@@ -8,7 +8,7 @@ export default function ODMMenu({ language }: languageProps) {
       "ODMMenuTitle": "PARTNER MANUFACTURER"
     },
     "Korean": {
-      "ODMMenuTitle": "ODM 사업"
+      "ODMMenuTitle": "협력 제조업체"
     }
   }
 
