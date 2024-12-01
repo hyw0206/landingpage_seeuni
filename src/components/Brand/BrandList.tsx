@@ -4,7 +4,7 @@ import * as Styled from "elements/Brand/BrandList";
 export default function BrandList() {
   const brandNumber = 9;
 
-  const items2 = [
+  const items = [
     {
       "fileName": "daymellowLogo.png",
       "width": "292",
@@ -102,40 +102,28 @@ export default function BrandList() {
     }
   ]
 
-  // const items = [
-  //   { id: 1, src: '/image/Brand/daymellowLogo.png', label: 'daymellow', path: '/daymellow' },
-  //   { id: 2, src: '/image/Brand/dintoLogo.png', label: 'Dinto', path: '/dinto' },
-  //   { id: 3, src: '/image/Brand/medipeelLogo.png', label: 'MEDIPEEL+', path: '/medipeel' },
-  //   { id: 4, src: '/image/Brand/aplbLogo.png', label: 'APLB', path: '/aplb' },
-  //   { id: 5, src: '/image/Brand/lebelageLogo.png', label: 'LEBELAGE', path: '/lebelage' },
-  //   { id: 6, src: '/image/Brand/uiqLogo.png', label: 'UIQ', path: '/uiq' },
-  //   { id: 7, src: '/image/Brand/herbloom.png', label: 'Herbloom', path: '/herbloom' },
-  //   { id: 8, src: '/image/Brand/vtcosmeticsLogo.png', label: 'VT Cosmetics', path: '/vtcosmetics' },
-  //   { id: 9, src: '/image/Brand/heavymakeupLogo.png', label: 'HEVVY MAKEUP', path: '/hevvy' },
-  //   { id: 10, src: '/image/Brand/heavymakeupLogo.png', label: 'HEVVY MAKEUP', path: '/hevvy' },
-  //   { id: 11, src: '/image/Brand/heavymakeupLogo.png', label: 'HEVVY MAKEUP', path: '/hevvy' },
-  //   { id: 12, src: '/image/Brand/heavymakeupLogo.png', label: 'HEVVY MAKEUP', path: '/hevvy' },
-  // ];
-
   return (
     <Styled.BrandListContainer>
-      {items2.map((item) => (
-        <Styled.BrandListBox>
-          <Styled.BrandListItem>
-            <Styled.BrandListImage src={"/image/Brand/" + item.fileName}
-              width={item.width}
-              height={item.height} />
-          </Styled.BrandListItem>
-          <Styled.BrandListLabel style={{ 
-            height: "75px" ,
-            fontSize: "32px", 
-            fontWeight: "500",
-            marginTop: "15px", 
-            lineHeight: "38px"}}>
+      <Styled.BrandListInner>
+        {items.map((item) => (
+          <Styled.BrandListBox>
+            <Styled.BrandListItem>
+              <Styled.BrandListImage src={"/image/Brand/" + item.fileName}
+                width={item.width}
+                height={item.height} />
+            </Styled.BrandListItem>
+            <Styled.BrandListLabel style={{
+              height: "75px",
+              fontSize: "32px",
+              fontWeight: "500",
+              marginTop: "15px",
+              lineHeight: "38px"
+            }}>
               {item.label}
-          </Styled.BrandListLabel>
-        </Styled.BrandListBox>
-      ))}
+            </Styled.BrandListLabel>
+          </Styled.BrandListBox>
+        ))}
+      </Styled.BrandListInner>
     </Styled.BrandListContainer>
   );
 };

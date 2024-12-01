@@ -23,7 +23,7 @@ const ContactMap: React.FC = () => {
             <MapContainer
                 center={position}
                 zoom={17}
-                scrollWheelZoom={false}
+                scrollWheelZoom={true}
                 style={{ height: '387px', width: '387px' }}
             >
                 <TileLayer
@@ -32,7 +32,7 @@ const ContactMap: React.FC = () => {
                 />
                 <Marker position={position}>
                     <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
+                       회사명 : Seeuni <br /> Easily customizable.
                     </Popup>
                 </Marker>
             </MapContainer>

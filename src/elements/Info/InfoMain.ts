@@ -10,7 +10,6 @@ export const InfoMainWrapper = styled.div`
   background-position: center;
 `;
 
-
 export const InfoMainText = styled.div`
   margin: 234px 0 0 488px;
   width: 766px;

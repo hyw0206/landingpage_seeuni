@@ -5,7 +5,7 @@ export const InfoMessageWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 538px;
+  height: 498px;
 `
 
 export const InfoMessageTtile = styled.div`
@@ -16,26 +16,32 @@ export const InfoMessageTtile = styled.div`
 
 export const InfoMessageQuote = styled.img`
   margin-left: -28px;
-  margin-top: 32px;
+  margin-top: 20px;
 `
 
 export const InfoMessageArticle = styled.div`
-  width: 920px;
+  width: 950px;
   margin-top: 20px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 300;
+  font-family: "Roboto";
+  font-style: italic;
   letter-spacing: 0.1em; // 2.2px
   text-align: center;
   line-height: 26px;
 `
 export const InfoMessageArticleLine = styled.hr`
-  margin-top: 24px;
+  margin-top: 12px;
   width: 250px;
   height: 1px;
 `
 
 export const InfoMessageWriter = styled.div`
-  margin-top: 20px;
+  margin-top: 12px;
   font-size: 20px;
-  font-weight: 500;
+  font-family: "Roboto";
+`
+
+export const InfoMessageRank = styled.span`
+  color: #ED74DA;
 `

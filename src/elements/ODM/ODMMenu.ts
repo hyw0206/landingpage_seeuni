@@ -12,7 +12,7 @@ export const ODMMenuWrapper = styled.div`
 export const ODMMenuTitle = styled.div`
   width: 472px;
   height: 27px;
-  margin: 46px 0px 39px 0px;
+  margin: 55px 815px 42px 814px;
   font-size: 36px;
   font-weight: 600;
   line-height: 42px;
@@ -43,4 +43,6 @@ export const ODMMenuPartnerBoxImage = styled.img`
   width: 169px;
   height: 82px;
   margin-right: 40px;
+  width: ${(props) => props.width + 'px'};
+  height: ${(props) => props.height + 'px'};
 `
