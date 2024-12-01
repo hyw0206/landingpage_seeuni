@@ -2,6 +2,7 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import { languageProps } from "shared/type/commonType"
 
 // Import marker icons
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
@@ -32,7 +33,7 @@ const ContactMap: React.FC = () => {
                 />
                 <Marker position={position}>
                     <Popup>
-                       회사명 : Seeuni <br /> Easily customizable.
+                       Seeuni입니다. 
                     </Popup>
                 </Marker>
             </MapContainer>

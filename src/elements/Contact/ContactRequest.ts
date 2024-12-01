@@ -29,6 +29,7 @@ export const ContactRequestTextWrapper = styled.div`
   margin-top: 19px;
   color: rgba(130, 130, 130, 1);
   font-size: 22px; 
+  font-family: "Roboto";
 `;
 
 export const ContactRequestText = styled.div`
@@ -55,6 +56,7 @@ export const ContactRequestTextArea = styled.textarea`
   border: 1px solid rgba(0, 0, 0, 1); 
   border-radius: 15px;
   font-size: 24px;
+  font-family: "Roboto";
 `;
 
 export const SubmitButton = styled.button`
