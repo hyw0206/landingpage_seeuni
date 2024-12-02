@@ -28,7 +28,7 @@ export const ContactInputWrapper = styled.div`
 export const ContactRequestTextWrapper = styled.div`
   display: flex;
   margin-top: 19px;
-  color: rgba(130, 130, 130, 1);
+  color: #656565;
   font-size: 22px; 
   font-family: "Roboto";
 `;
@@ -74,6 +74,11 @@ export const SubmitButton = styled.button`
   background-color: rgba(237, 116, 218, 100);
   color: rgba(255, 255, 255, 1);
   font-size: 32px;
+  font-weight: 700;
+
+  &:hover{
+    background-color: black;
+  }
 `;
 
 export const ContactRequestFileInputWrapper = styled.div`
