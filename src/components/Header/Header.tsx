@@ -22,7 +22,7 @@ export default function Header({language, setLanguage} :headerProps) {
 
   return (
     <Styled.HeaderWrapper>
-      <Styled.HeaderContentWrapper >
+      <Styled.HeaderContentWrapper>
       <a href='#'><Styled.HeaderLogo src="/image/SEEUNI_Logo.png" alt="SEEUNI Logo"/></a>
       <Styled.HeaderItem>
         <a href='#About-us' style={{textDecoration: 'none', color: '#000000'}}><Styled.HeaderItemText>About us</Styled.HeaderItemText></a>

@@ -13,8 +13,8 @@ export default function Info({language}: languageProps) {
       <InfoMain 
         language={language}
       />
-      <InfoAbout />
-      <InfoMessage />
+      <InfoAbout language={language}/>
+      <InfoMessage language={language}/>
     </Styled.InfoWrapper>
     </>
   )
