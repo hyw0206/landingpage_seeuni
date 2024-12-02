@@ -1,8 +1,37 @@
 import * as Styled from "elements/Contact/ContactRequest"
 import { languageProps } from "shared/type/commonType"
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
+ 
 export default function Request({ language }: languageProps) {
 
+    const form = useRef<HTMLFormElement>(null); // 폼 참조에 제네릭 타입 추가
+
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+  
+      if (form.current) {
+        emailjs
+          .sendForm(
+            'service_zqqbgcy', 
+            'template_2ykjpv8', 
+            form.current, 
+            'QYqGcq8VSAe7V4VP9'
+          )
+          .then(
+            (result) => {
+                alert("Email sent successfully!");
+              console.log('SUCCESS!', result.text);
+            },
+            (error) => {
+                alert("Failed to send email.");
+              console.log('FAILED...', error.text);
+            }
+          );
+      }
+    };    
+    
   const textData = {
     "English": {
       "ContactRequestTitle": "Please leave your request!",
@@ -42,6 +71,7 @@ export default function Request({ language }: languageProps) {
 
   return (
     <Styled.ContactRequestWrapper>
+        <form ref={form} onSubmit={sendEmail}>
       <Styled.ContactRequestTitleText>{textData[language].ContactRequestTitle}</Styled.ContactRequestTitleText>
       <Styled.ContactInputWrapper>
         <Styled.ContactRequestTextWrapper>
@@ -49,7 +79,7 @@ export default function Request({ language }: languageProps) {
         </Styled.ContactRequestTextWrapper>
         <Styled.ContactRequestInput
           type="text"
-          name="companyName"
+          name="company_name"
           placeholder={textData[language].ContactRequestCompanyPlaceholder}
         />
 
@@ -58,7 +88,7 @@ export default function Request({ language }: languageProps) {
         </Styled.ContactRequestTextWrapper>
         <Styled.ContactRequestInput
           type="email"
-          name="email"
+          name="company_email"
           placeholder={textData[language].ContactRequestEmailPlaceholder}
         />
 
@@ -80,6 +110,8 @@ export default function Request({ language }: languageProps) {
         />
       </Styled.ContactInputWrapper>
       <Styled.SubmitButton type="submit">{textData[language].ContactRequestSendBtn}</Styled.SubmitButton>
+      </form>
     </Styled.ContactRequestWrapper>
   )
 }
+
