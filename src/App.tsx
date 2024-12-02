@@ -32,7 +32,7 @@ function App() {
         />
       {/* </FullpageSection>
       <FullpageSection> */}
-        <Business />    
+        <Business language={language}/>    
       {/* </FullpageSection>
       <FullpageSection> */}
         <Brand language={language}/>
