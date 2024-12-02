@@ -9,7 +9,7 @@ export default function ContactMain({language}: languageProps) {
       "ContactMainText": "Contact<br />Us"
     },
     "Korean": {
-      "ContactMainText": "우리와 함께<br />하세요"
+      "ContactMainText": "문의하기"
     }
   }
 

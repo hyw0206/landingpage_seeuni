@@ -8,6 +8,9 @@ export const FooterWrapper = styled.div`
   width: 100%;
   height: 480px;
   background-color: #EFEFEF;
+  @media (max-width: 960px) {
+    margin-top: 330px;
+  }
 `;
 
 export const FooterContentWrapper = styled.div`

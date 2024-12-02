@@ -58,6 +58,7 @@ export const ContactArticleContentMapWrapper = styled.div`
     width: 100%; /* 가로 폭을 전체로 설정 */
     display: flex;
     justify-content: center; /* 가운데 정렬 */
+    position: relative;
   }
 `;
 

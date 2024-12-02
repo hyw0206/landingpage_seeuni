@@ -51,7 +51,7 @@ export default function Request({ language }: languageProps) {
       "ContactRequestSendBtn": "Send",
     },
     "Korean": {
-      "ContactRequestTitle": "요청을 남겨주세요",
+      "ContactRequestTitle": "요청란",
 
       "ContactRequestCompanyTitle": "회사명",
       "ContactRequestCompanyPlaceholder": "여기에 회사명을 입력해 주세요",

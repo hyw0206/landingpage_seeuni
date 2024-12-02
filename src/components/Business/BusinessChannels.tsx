@@ -1,7 +1,16 @@
 import * as Styled from "elements/Business/BusinessChannels"
+import { languageProps } from "shared/type/commonType"
+import parse from "html-react-parser";
 
-
-export default function BusinessChannels() {
+export default function BusinessChannels({language}: languageProps) {
+  const titleData = {
+    "English": {
+      "BusinessChannelsTitle": "Distribution Channels"
+    },
+    "Korean": {
+      "BusinessChannelsTitle": "유통 채널"
+    }
+  }
 
   const pinData = [
     {
@@ -73,7 +82,7 @@ export default function BusinessChannels() {
   return (
     <Styled.BusinessChannelsWrapper>
       <Styled.BusinessChannelsTitle>
-        Distribution Channels
+      {parse(titleData[language].BusinessChannelsTitle)}
       </Styled.BusinessChannelsTitle>
       <Styled.BusinessChannelsMap>
         {

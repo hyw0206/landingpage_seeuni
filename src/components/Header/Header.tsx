@@ -22,7 +22,7 @@ export default function Header({language, setLanguage} :headerProps) {
 
   return (
     <Styled.HeaderWrapper>
-      <Styled.HeaderContentWrapper >
+      <Styled.HeaderContentWrapper>
       <a href='#'><Styled.HeaderLogo src="/image/SEEUNI_Logo.png" alt="SEEUNI Logo"/></a>
       <Styled.HeaderItem>
         <a href='#About-us' style={{textDecoration: 'none', color: '#000000'}}><Styled.HeaderItemText>About us</Styled.HeaderItemText></a>
@@ -53,23 +53,41 @@ export default function Header({language, setLanguage} :headerProps) {
             />
         </Styled.HeaderCountryWrapper>
         {
-          showSetLanguage &&
-          (
+          showSetLanguage && (
             <>
-            <Styled.HeaderCountryText
-              onClick={onClickSetLanguageEnglish}
-            >
-              English
-            </Styled.HeaderCountryText>
-            <Styled.HeaderCountryText
-              onClick={onClickSetLanguageKorean}
-            >
-              Korean
-            </Styled.HeaderCountryText>
-            </>
+              {language === "English" ?
+                (
+                  <>
+                    <Styled.HeaderCountryText
+                      onClick={onClickSetLanguageEnglish}
+                      style={{color: "#ED74DA"}}
+                    >
+                      English
+                    </Styled.HeaderCountryText>
+                    <Styled.HeaderCountryText
+                      onClick={onClickSetLanguageKorean}
+                    >
+                      Korean
+                    </Styled.HeaderCountryText>
+                  </>
+                ) : (
+                  <>
+                    <Styled.HeaderCountryText
+                      onClick={onClickSetLanguageKorean}
+                      style={{color: "#ED74DA"}}
+                    >
+                      Korean
+                    </Styled.HeaderCountryText>
+                    <Styled.HeaderCountryText
+                      onClick={onClickSetLanguageEnglish}
+                    >
+                      English
+                    </Styled.HeaderCountryText>
+                  </>
+                )}
+            </>        
           )  
-        }
-        
+        }    
       </div>
    
       </Styled.HeaderContentWrapper>
