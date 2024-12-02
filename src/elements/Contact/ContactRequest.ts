@@ -6,7 +6,7 @@ export const ContactRequestWrapper = styled.div`
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 800px;
+  height: 730px;
   background-color: rgba(243, 234, 234, 1);
 `;
 
@@ -71,14 +71,7 @@ export const SubmitButton = styled.button`
   font-size: 32px;
 `;
 
-export const FileButton = styled.button`
-  width: 173px;
-  height: 44px;
-  margin-top: 15px;
-  margin-left: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #828282;
-  color: rgba(255, 255, 255, 1);
-  font-size: 20px;
+export const ContactRequestFileInputWrapper = styled.div`
+  text-align: left;
+  margin-top: 10px;
 `;

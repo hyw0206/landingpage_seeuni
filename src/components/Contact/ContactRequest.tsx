@@ -138,9 +138,9 @@ export default function Request({ language }: languageProps) {
             name="message"
             placeholder={textData[language].ContactRequestMessagePlaceholder}
           />
-          <div>
+          <Styled.ContactRequestFileInputWrapper>
             <input type="file" multiple onChange={handleFileChange} ></input>
-          </div>
+          </Styled.ContactRequestFileInputWrapper>
 
         </Styled.ContactInputWrapper>
         <Styled.SubmitButton type="submit">{textData[language].ContactRequestSendBtn}</Styled.SubmitButton>
