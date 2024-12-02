@@ -41,11 +41,13 @@ export const ContactRequestInput = styled.input`
   width: 908px;
   padding: 10px;
   margin-top: 12px;
-  color: rgba(0, 0, 0, 0.4); 
   border: 1px solid rgba(0, 0, 0, 1);
   border-radius: 15px;
-  font-size: 24px;
+  font-size: 20px;
 
+   &::placeholder {
+    color: lightgrey;
+   }
 `;
 
 export const ContactRequestTextArea = styled.textarea`
@@ -53,11 +55,14 @@ export const ContactRequestTextArea = styled.textarea`
   height: 141px;
   padding: 10px;
   margin-top: 12px;
-  color: rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(0, 0, 0, 1); 
   border-radius: 15px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Roboto";
+
+  &::placeholder {
+    color: lightgrey;
+   }
 `;
 
 export const SubmitButton = styled.button`
