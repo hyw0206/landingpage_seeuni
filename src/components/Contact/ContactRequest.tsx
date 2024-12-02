@@ -135,6 +135,7 @@ export default function Request({ language }: languageProps) {
             type="text"
             name="company_name"
             placeholder={textData[language].ContactRequestCompanyPlaceholder}
+            required
           />
 
           <Styled.ContactRequestTextWrapper>
@@ -144,6 +145,7 @@ export default function Request({ language }: languageProps) {
             type="email"
             name="company_email"
             placeholder={textData[language].ContactRequestEmailPlaceholder}
+            required
           />
 
           <Styled.ContactRequestTextWrapper>
@@ -163,7 +165,7 @@ export default function Request({ language }: languageProps) {
             placeholder={textData[language].ContactRequestMessagePlaceholder}
           />
           <Styled.ContactRequestFileInputWrapper>
-            <input type="file" name="my_file" multiple onChange={handleFileChange} ></input>
+            <input type="file" accept=".pdf, .doc, .docx, .hwp, .ppt, .pptx, .jpg, .png, .jpeg" name="my_file" multiple onChange={handleFileChange} ></input>
           </Styled.ContactRequestFileInputWrapper>
 
         </Styled.ContactInputWrapper>

@@ -76,7 +76,9 @@ export default function InfoAbout({ language }: languageProps) {
           <Styled.InfoAboutSummaryItemArticle>SEEUNI</Styled.InfoAboutSummaryItemArticle>
         </Styled.InfoAboutSummaryItem>
         <Styled.InfoAboutSummaryItem>
-          <Styled.InfoAboutSummaryItemTitle>{parse(miniTitleData2[language].InfoAboutTitle)}</Styled.InfoAboutSummaryItemTitle>
+          <Styled.InfoAboutSummaryItemTitle
+            className={language === "Korean" ? "korean" : ""}
+          >{parse(miniTitleData2[language].InfoAboutTitle)}</Styled.InfoAboutSummaryItemTitle>
           <Styled.InfoAboutSummaryItemLine />
           <Styled.InfoAboutSummaryItemArticle>{parse(miniTitleDetail1[language].InfoAboutTitle)}</Styled.InfoAboutSummaryItemArticle>
         </Styled.InfoAboutSummaryItem>
@@ -86,9 +88,10 @@ export default function InfoAbout({ language }: languageProps) {
           <Styled.InfoAboutSummaryItemArticle>{parse(miniTitleDetail2[language].InfoAboutTitle)}</Styled.InfoAboutSummaryItemArticle>
         </Styled.InfoAboutSummaryItem>
       </Styled.InfoAboutSummaryWrapper>
-      <Styled.InfoAboutArticle>
-      {parse(textData1[language].InfoAboutText)}
-
+      <Styled.InfoAboutArticle
+        className={language === "Korean" ? "korean" : ""}
+      >
+        {parse(textData1[language].InfoAboutText)}
       </Styled.InfoAboutArticle>
     </Styled.InfoAboutWrapper>
   )

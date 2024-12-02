@@ -5,10 +5,10 @@ import parse from "html-react-parser";
 export default function BusinessExport({language}: languageProps) {
   const titleData = {
     "English": {
-      "BusinessExportTitle": "K- Beauty Export"
+      "BusinessExportTitle": "K-Beauty Export"
     },
     "Korean": {
-      "BusinessExportTitle": "K뷰티 화장품 수출"
+      "BusinessExportTitle": "K-뷰티 화장품 수출"
     }
   }
 
@@ -29,8 +29,10 @@ export default function BusinessExport({language}: languageProps) {
     <Styled.BusinessExportWrapper id="K-BeautyExport">
       <Styled.BusinessExportTitle>{parse(titleData[language].BusinessExportTitle)}</Styled.BusinessExportTitle>
       <Styled.BusinessExportArticleWrapper>
-        <Styled.BusinessExportArticleText>
-        {parse(textData[language].BusinessExportText)}
+        <Styled.BusinessExportArticleText
+          className={language === "Korean" ? "korean" : ""}
+        >
+          {parse(textData[language].BusinessExportText)}
         </Styled.BusinessExportArticleText>
         <Styled.BusinessExportArticleLine />
         <Styled.BusinessExportArticleImage src="/image/Business/BusinessExport.png"/>
