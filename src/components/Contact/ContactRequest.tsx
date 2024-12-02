@@ -3,7 +3,6 @@ import { languageProps } from "shared/type/commonType"
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-
 export default function Request({ language }: languageProps) {
 
   const form = useRef<HTMLFormElement>(null); // 폼 참조에 제네릭 타입 추가
@@ -12,23 +11,44 @@ export default function Request({ language }: languageProps) {
     e.preventDefault();
 
     if (form.current) {
-      emailjs
-        .sendForm(
-          'service_zqqbgcy',
-          'template_2ykjpv8',
-          form.current,
-          'QYqGcq8VSAe7V4VP9'
-        )
+        // 'Company name'과 'Email' 필드가 비어있는지 확인
+        const companyName = form.current["company_name"].value;
+        const companyEmail = form.current["company_email"].value;
+  
+        if (!companyName || !companyEmail) {
+            if(language == "English"){
+                alert("Please fill in both the Company Name and Email fields.");
+            } else {
+                alert("회사명과 이메일을 모두 입력해주세요.");
+            }
+          return; // 필드가 비어 있으면 폼 제출을 막음
+        }
+        if (!form.current) {
+            console.error("환경 변수가 설정되지 않았거나 올바르지 않습니다.");
+            return;
+          }
+
+        emailjs
+        .sendForm(process.env.REACT_APP_SERVICE_ID as string, process.env.REACT_APP_TEMPLATE_ID as string, form.current, process.env.REACT_APP_PUBLIC_KEY as string)
+        // .sendForm("service_zqqbgcy", "template_efo9j0c", form.current, "hY7hDSUHAWHT3y8YA")
         .then(
           (result) => {
-            alert("Email sent successfully!");
-            console.log('SUCCESS!', result.text);
+            if(language == "English") {
+                alert("Email sent successfully!");
+            } else {
+                alert("이메일이 성공적으로 전송되었습니다.");
+            }
           },
           (error) => {
-            alert("Failed to send email.");
-            console.log('FAILED...', error.text);
+            if(language == "Korean") {
+                alert("Failed to send email.");
+              console.log('FAILED...', error.text);
+            } else {
+                alert("이메일 전송에 실패했습니다.");
+            }
           }
         );
+    
     }
   };
 
@@ -40,7 +60,11 @@ export default function Request({ language }: languageProps) {
       const totalSize = calculateTotalFileSize(files);
 
       if (totalSize > maxSize) {
-        alert("첨부된 파일의 총 크기는 2MB를 초과할 수 없습니다.");
+        if(language == "English") {
+            alert("The total size of the attached file must not exceed 2MB.");
+        } else {
+            alert("첨부된 파일의 총 크기는 2MB를 초과할 수 없습니다.");
+        }
         event.target.value = ""; // 입력된 파일 제거
       }
     }
@@ -101,7 +125,7 @@ export default function Request({ language }: languageProps) {
 
   return (
     <Styled.ContactRequestWrapper>
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail} encType="multipart/form-data">
         <Styled.ContactRequestTitleText>{textData[language].ContactRequestTitle}</Styled.ContactRequestTitleText>
         <Styled.ContactInputWrapper>
           <Styled.ContactRequestTextWrapper>
@@ -139,7 +163,7 @@ export default function Request({ language }: languageProps) {
             placeholder={textData[language].ContactRequestMessagePlaceholder}
           />
           <Styled.ContactRequestFileInputWrapper>
-            <input type="file" multiple onChange={handleFileChange} ></input>
+            <input type="file" name="my_file" multiple onChange={handleFileChange} ></input>
           </Styled.ContactRequestFileInputWrapper>
 
         </Styled.ContactInputWrapper>
