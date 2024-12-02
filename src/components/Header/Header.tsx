@@ -53,23 +53,41 @@ export default function Header({language, setLanguage} :headerProps) {
             />
         </Styled.HeaderCountryWrapper>
         {
-          showSetLanguage &&
-          (
+          showSetLanguage && (
             <>
-            <Styled.HeaderCountryText
-              onClick={onClickSetLanguageEnglish}
-            >
-              English
-            </Styled.HeaderCountryText>
-            <Styled.HeaderCountryText
-              onClick={onClickSetLanguageKorean}
-            >
-              Korean
-            </Styled.HeaderCountryText>
-            </>
+              {language === "English" ?
+                (
+                  <>
+                    <Styled.HeaderCountryText
+                      onClick={onClickSetLanguageEnglish}
+                      style={{color: "#ED74DA"}}
+                    >
+                      English
+                    </Styled.HeaderCountryText>
+                    <Styled.HeaderCountryText
+                      onClick={onClickSetLanguageKorean}
+                    >
+                      Korean
+                    </Styled.HeaderCountryText>
+                  </>
+                ) : (
+                  <>
+                    <Styled.HeaderCountryText
+                      onClick={onClickSetLanguageKorean}
+                      style={{color: "#ED74DA"}}
+                    >
+                      Korean
+                    </Styled.HeaderCountryText>
+                    <Styled.HeaderCountryText
+                      onClick={onClickSetLanguageEnglish}
+                    >
+                      English
+                    </Styled.HeaderCountryText>
+                  </>
+                )}
+            </>        
           )  
-        }
-        
+        }    
       </div>
    
       </Styled.HeaderContentWrapper>
