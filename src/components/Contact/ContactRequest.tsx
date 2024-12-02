@@ -30,7 +30,6 @@ export default function Request({ language }: languageProps) {
 
         emailjs
         .sendForm(process.env.REACT_APP_SERVICE_ID as string, process.env.REACT_APP_TEMPLATE_ID as string, form.current, process.env.REACT_APP_PUBLIC_KEY as string)
-        // .sendForm("service_zqqbgcy", "template_efo9j0c", form.current, "hY7hDSUHAWHT3y8YA")
         .then(
           (result) => {
             if(language == "English") {
