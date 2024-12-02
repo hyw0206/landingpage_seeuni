@@ -50,8 +50,7 @@ export default function InfoAbout({ language }: languageProps) {
       South Korea`
     },
     "Korean": {
-      "InfoAboutTitle": `박재영<br />
-      (대한민국)`
+      "InfoAboutTitle": `박재영, (대한민국)`
     }
   }
   const textData1 = {

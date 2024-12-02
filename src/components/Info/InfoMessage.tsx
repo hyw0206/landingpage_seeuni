@@ -22,10 +22,10 @@ export default function InfoMessage({ language }: languageProps) {
         Join us as we explore new possibilities for K-beauty.`
     },
     "Korean": {
-      "InfoMessageText": `“Seeuni는 한국 화장품의 진정한 아름다움을 세계 각국의 소비자들과 함께 나누기 위해 시작한 회사입니다. 
+      "InfoMessageText": `Seeuni는 한국 화장품의 진정한 아름다움을 세계 각국의 소비자들과 함께 나누기 위해 시작한 회사입니다. 
       저는 2009년부터 화장품 업계에서 쌓아온 경험을 바탕으로, <br /> K뷰티의 특별함을 전 세계에 전달하고자 Seeuni를 설립했습니다. 
       Seeuni는 단순한 수출을 넘어, <br /> 한국 화장품의 진가와 가치를 글로벌 무대에 선보이겠다는 약속을 지키겠습니다. 
-      <br />고객 여러분과 함께 한국 화장품의 새로운 가능성을 열어가고 싶습니다.”`
+      <br />고객 여러분과 함께 한국 화장품의 새로운 가능성을 열어가고 싶습니다.`
     },
   }
   const ceoData = {
