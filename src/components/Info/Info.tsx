@@ -10,9 +10,7 @@ export default function Info({language}: languageProps) {
     <>
     <Styled.GlobalStyle />
     <Styled.InfoWrapper>
-      <InfoMain 
-        language={language}
-      />
+      <InfoMain language={language}/>
       <InfoAbout language={language}/>
       <InfoMessage language={language}/>
     </Styled.InfoWrapper>

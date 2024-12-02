@@ -1,11 +1,20 @@
 import * as Styled from "elements/Business/BusinessMain"
+import { languageProps } from "shared/type/commonType"
+import parse from "html-react-parser";
 
+export default function BusinessMain({language}: languageProps) {
 
-export default function BusinessMain() {
-
+  const textData = {
+    "English": {
+      "BusinessMainText": "Business Area"
+    },
+    "Korean": {
+      "BusinessMainText": "사업 영역"
+    }
+  }
   return (
     <Styled.BusinessMainWrapper>
-        <Styled.BusinessMainText>Business Area</Styled.BusinessMainText>
+        <Styled.BusinessMainText>{parse(textData[language].BusinessMainText)}</Styled.BusinessMainText>
     </Styled.BusinessMainWrapper>
   )
 }
