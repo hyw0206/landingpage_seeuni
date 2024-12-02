@@ -4,6 +4,7 @@ export const ContactRequestWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 100%;
   height: 682px;
   background-color: rgba(243, 234, 234, 1);
