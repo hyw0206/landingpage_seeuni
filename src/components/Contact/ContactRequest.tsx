@@ -28,20 +28,36 @@ export default function Request({ language }: languageProps) {
         console.error("환경 변수가 설정되지 않았거나 올바르지 않습니다.");
         return;
       }
+        // 'Company name'과 'Email' 필드가 비어있는지 확인
+        const companyName = form.current["company_name"].value;
+        const companyEmail = form.current["company_email"].value;
+  
+        if (!companyName || !companyEmail) {
+            if(language === "English"){
+                alert("Please fill in both the Company Name and Email fields.");
+            } else {
+                alert("회사명과 이메일을 모두 입력해주세요.");
+            }
+          return; // 필드가 비어 있으면 폼 제출을 막음
+        }
+        if (!form.current) {
+            console.error("환경 변수가 설정되지 않았거나 올바르지 않습니다.");
+            return;
+          }
 
       emailjs
         .sendForm(process.env.REACT_APP_SERVICE_ID as string, process.env.REACT_APP_TEMPLATE_ID as string, form.current, process.env.REACT_APP_PUBLIC_KEY as string)
         .then(
           (result) => {
-            if (language == "English") {
-              alert("Email sent successfully!");
+            if(language === "English") {
+                alert("Email sent successfully!");
             } else {
               alert("이메일이 성공적으로 전송되었습니다.");
             }
           },
           (error) => {
-            if (language == "Korean") {
-              alert("Failed to send email.");
+            if(language === "Korean") {
+                alert("Failed to send email.");
               console.log('FAILED...', error.text);
             } else {
               alert("이메일 전송에 실패했습니다.");
@@ -60,8 +76,8 @@ export default function Request({ language }: languageProps) {
       const totalSize = calculateTotalFileSize(files);
 
       if (totalSize > maxSize) {
-        if (language == "English") {
-          alert("The total size of the attached file must not exceed 2MB.");
+        if(language === "English") {
+            alert("The total size of the attached file must not exceed 2MB.");
         } else {
           alert("첨부된 파일의 총 크기는 2MB를 초과할 수 없습니다.");
           setSelectedFiles([]); // 선택된 파일 초기화
@@ -168,6 +184,7 @@ export default function Request({ language }: languageProps) {
           <Styled.ContactRequestTextArea
             name="message"
             placeholder={textData[language].ContactRequestMessagePlaceholder}
+            style={{ resize: 'none' }}
           />
           <Styled.ContactRequestFileInputWrapper>
             <input

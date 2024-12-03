@@ -37,3 +37,10 @@ export const BusinessChannelsPin = styled.img<BusinessChannelsPinProps>`
   top: ${(props) => props.top + 'px'};
   left: ${(props) => props.left + 'px'};
 `
+export const BusinessChannelsLine = styled.hr`
+  width: 215px;
+  height: 1px;
+  margin-top: 32px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 0;
+`

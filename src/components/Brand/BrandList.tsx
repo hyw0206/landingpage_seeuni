@@ -1,9 +1,9 @@
-import BrandItem from "./BrandItem";
-import { Link } from "react-router-dom";
+// import BrandItem from "./BrandItem";
+// import { Link } from "react-router-dom";
 import * as Styled from "elements/Brand/BrandList";
 
 export default function BrandList() {
-  const brandNumber = 16;
+  // const brandNumber = 16;
 
   const items = [
     {

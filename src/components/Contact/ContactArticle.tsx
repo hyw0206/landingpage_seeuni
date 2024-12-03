@@ -54,7 +54,7 @@ export default function ContactArticle({ language }: languageProps) {
           <Styled.ContactArticleContentInfoText style={{ marginTop: '25px' , height: '70px', lineHeight: '28px'}}>{parse(textData[language].ContactArticleAddressText)}</Styled.ContactArticleContentInfoText>
           <Styled.ContactArticleContentInfoText style={{ marginTop: '32px' }}>+82 10-9844-2983</Styled.ContactArticleContentInfoText>
           <Styled.ContactArticleContentInfoText style={{ marginTop: '34px' }}>+82 70-7602-7150</Styled.ContactArticleContentInfoText>
-          <Styled.ContactArticleContentInfoText style={{ marginTop: '34px' }}>SEEUNI@SEEUNI.CO</Styled.ContactArticleContentInfoText>
+          <Styled.ContactArticleContentInfoText style={{ marginTop: '34px' }}>kgy12@seeuni.co.kr</Styled.ContactArticleContentInfoText>
         </Styled.ContactArticleContentInfoTextWrapper>
 
         <Styled.ContactArticleContentMapWrapper>

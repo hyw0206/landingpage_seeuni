@@ -18,7 +18,7 @@ export default function BusinessPreview({language}: languageProps) {
 			spreading the beauty of Korea far and wide.`
     },
     "Korean": {
-      "BusinessPreviewText": `<span style="font-size: 12px;">Seeuni는 이미 여러 나라에 한국 화장품을 수출하며 한국의 아름다움을 널리 알리고 있습니다.</span>`
+      "BusinessPreviewText": `<span style="font-size: 14px;">Seeuni는 이미 여러 나라에 한국 화장품을 수출하며 한국의 아름다움을 널리 알리고 있습니다.</span>`
     }
   }
 	const titleData2 = {
@@ -37,7 +37,7 @@ export default function BusinessPreview({language}: languageProps) {
 			from product development to branding.`
     },
     "Korean": {
-      "BusinessPreviewText": `<span style="font-size: 12px;">각국의 소비자 요구에 맞춰 맞춤형 화장품을 제작하는 ODM 서비스를 제공합니다.<br>
+      "BusinessPreviewText": `<span style="font-size: 14px;">각국의 소비자 요구에 맞춰 맞춤형 화장품을 제작하는 ODM 서비스를 제공합니다.<br>
 			 Seeuni는 고품질의 제품을 합리적인 가격에 제공하며, 고객사와 협력하여 성공적인 브랜드를 만들어 나가고 있습니다.</span>`
     }
   }
@@ -56,7 +56,7 @@ export default function BusinessPreview({language}: languageProps) {
 			showcase high-quality cosmetics that embody the beauty of Korea.`
     },
     "Korean": {
-      "BusinessPreviewText": `<span style="font-size: 12px;">SEEUNI는 다양한 브랜드와 협력하여 
+      "BusinessPreviewText": `<span style="font-size: 14px;">SEEUNI는 다양한 브랜드와 협력하여 
 			한국의 아름다움을 담은 고품질 화장품을 선보이고 있습니다.</span>`
     }
   }

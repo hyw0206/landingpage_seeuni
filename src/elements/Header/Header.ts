@@ -85,8 +85,8 @@ export const HeaderCountryLogo = styled.img`
 `
 export const HeaderCountryText = styled.div`
   font-family: "Roboto";
-  font-size: 10px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   cursor: pointer;
   user-select: none;
   margin-bottom: 2px;
