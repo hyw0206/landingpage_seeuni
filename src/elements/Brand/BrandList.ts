@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 // Flex 컨테이너 스타일링
 export const BrandListContainer = styled.div`
-    width: 100%; // 화면 전체 너비
-    background-color: #FFE6F9;
+  width: 100%; // 화면 전체 너비
+  background-color: #FFE6F9;
+    ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
 `;
 
 export const BrandListInner = styled.div`
@@ -32,8 +36,8 @@ export const BrandListItem = styled.div`
   flex-direction: column; // 이미지와 텍스트 세로 정렬
   align-items: center; // 중앙 정렬
   justify-content: center; // 중앙 정렬
-  width: 293px; // 고정된 아이템 크기
-  height: 239px;
+  width: 200px; // 고정된 아이템 크기 원래 293
+  height: 200px; // 239
   text-align: center;
   background-color: #fff;
   cursor: pointer;
@@ -48,6 +52,8 @@ export const BrandListImage = styled.img`
   height: ${(props) => props.height + 'px'};
   object-fit: contain;
   margin-bottom: 8px;
+  pointer-events: none; /* 마우스 이벤트를 차단 */
+  user-select: none;
 `;
 
 // 라벨 스타일링

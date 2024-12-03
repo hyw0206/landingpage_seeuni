@@ -4,7 +4,6 @@ export const BrandWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 50px;
 `
 
 export const BrandListWrapper = styled.div`

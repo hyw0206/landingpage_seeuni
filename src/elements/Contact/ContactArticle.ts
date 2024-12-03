@@ -6,6 +6,10 @@ export const ContactArticleWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 604px;
+    ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
 `;
 
 export const ContactArticleTitle = styled.div`
