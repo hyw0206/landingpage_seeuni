@@ -6,6 +6,10 @@ export const InfoMessageWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 498px;
+    ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
 `
 
 export const InfoMessageTtile = styled.div`

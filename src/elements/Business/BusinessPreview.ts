@@ -6,6 +6,10 @@ export const BusinessPreviewWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	background: #FFE6F9;
+	  ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
 `
 
 export const BusinessPreviewItem = styled.div`
