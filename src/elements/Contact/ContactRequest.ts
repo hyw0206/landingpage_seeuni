@@ -16,7 +16,7 @@ export const ContactRequestWrapper = styled.div`
 
 export const ContactRequestTitleText = styled.div`
   text-align: center;
-  margin-top: 35px;
+  margin-top: 60px;
   font-size: 40px;
   font-weight: bolder;
   color: rgba(70, 69, 74, 1);

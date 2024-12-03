@@ -162,6 +162,7 @@ export default function Request({ language }: languageProps) {
           <Styled.ContactRequestTextArea
             name="message"
             placeholder={textData[language].ContactRequestMessagePlaceholder}
+            style={{ resize: 'none' }}
           />
           <Styled.ContactRequestFileInputWrapper>
             <input type="file" accept=".pdf, .doc, .docx, .hwp, .ppt, .pptx, .jpg, .png, .jpeg" name="my_file" multiple onChange={handleFileChange} ></input>
