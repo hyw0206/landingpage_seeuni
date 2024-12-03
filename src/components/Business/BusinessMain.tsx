@@ -9,7 +9,7 @@ export default function BusinessMain({language}: languageProps) {
       "BusinessMainText": "Business Area"
     },
     "Korean": {
-      "BusinessMainText": "사업 영역"
+      "BusinessMainText": "<br>사업 영역"
     }
   }
   return (

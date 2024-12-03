@@ -38,6 +38,9 @@ export const BusinessExportArticleText = styled.div`
   font-family: "Roboto";
   font-style: italic;
   line-height: 120%;
+  &.korean {
+    font-family: "S-CoreDream";
+  }
 `
 
 export const BusinessExportArticleLine = styled.hr`

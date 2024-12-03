@@ -38,6 +38,9 @@ export const InfoAboutSummaryItemTitle = styled.div`
   font-size: 24px;
   font-family: "Roboto";
   font-weight: 500;
+  &.korean {
+    font-family: "S-CoreDream";
+  }
 `
 export const InfoAboutSummaryItemLine = styled.hr`
   margin-top: 12px;
@@ -60,6 +63,9 @@ export const InfoAboutArticle = styled.div`
   letter-spacing: 0.1em; // 2.2px
   text-align: left;
   line-height: 26px;
+  &.korean {
+    font-family: "S-CoreDream";
+  }
 `
 export const InfoAboutArticleBoldText = styled.span`
   font-weight: 500;
