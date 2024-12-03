@@ -16,7 +16,7 @@ export default function Request({ language }: languageProps) {
         const companyEmail = form.current["company_email"].value;
   
         if (!companyName || !companyEmail) {
-            if(language == "English"){
+            if(language === "English"){
                 alert("Please fill in both the Company Name and Email fields.");
             } else {
                 alert("회사명과 이메일을 모두 입력해주세요.");
@@ -32,14 +32,14 @@ export default function Request({ language }: languageProps) {
         .sendForm(process.env.REACT_APP_SERVICE_ID as string, process.env.REACT_APP_TEMPLATE_ID as string, form.current, process.env.REACT_APP_PUBLIC_KEY as string)
         .then(
           (result) => {
-            if(language == "English") {
+            if(language === "English") {
                 alert("Email sent successfully!");
             } else {
                 alert("이메일이 성공적으로 전송되었습니다.");
             }
           },
           (error) => {
-            if(language == "Korean") {
+            if(language === "Korean") {
                 alert("Failed to send email.");
               console.log('FAILED...', error.text);
             } else {
@@ -59,7 +59,7 @@ export default function Request({ language }: languageProps) {
       const totalSize = calculateTotalFileSize(files);
 
       if (totalSize > maxSize) {
-        if(language == "English") {
+        if(language === "English") {
             alert("The total size of the attached file must not exceed 2MB.");
         } else {
             alert("첨부된 파일의 총 크기는 2MB를 초과할 수 없습니다.");
