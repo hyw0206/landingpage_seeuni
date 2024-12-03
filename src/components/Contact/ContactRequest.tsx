@@ -12,9 +12,10 @@ export default function Request({ language }: languageProps) {
     e.preventDefault();
 
     if (form.current) {
-      // 'Company name'과 'Email' 필드가 비어있는지 확인
-      const companyName = form.current["company_name"].value;
-      const companyEmail = form.current["company_email"].value;
+      
+        // 'Company name'과 'Email' 필드가 비어있는지 확인
+        const companyName = form.current["company_name"].value;
+        const companyEmail = form.current["company_email"].value;
 
       if (!companyName || !companyEmail) {
         if (language == "English") {
@@ -28,9 +29,6 @@ export default function Request({ language }: languageProps) {
         console.error("환경 변수가 설정되지 않았거나 올바르지 않습니다.");
         return;
       }
-        // 'Company name'과 'Email' 필드가 비어있는지 확인
-        const companyName = form.current["company_name"].value;
-        const companyEmail = form.current["company_email"].value;
   
         if (!companyName || !companyEmail) {
             if(language === "English"){
