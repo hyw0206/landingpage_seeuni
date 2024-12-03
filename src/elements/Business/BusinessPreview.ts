@@ -6,6 +6,10 @@ export const BusinessPreviewWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	background: #FFE6F9;
+	  ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
 `
 
 export const BusinessPreviewItem = styled.div`
@@ -32,6 +36,10 @@ export const BusinessPreviewItemTitle = styled.div`
 	margin-top: 25px;
 	font-size: 30px;
 	font-family: "Roboto";
+	&.korean {
+    font-family: "S-CoreDream";
+		font-weight: 500;
+  }
 `
 export const BusinessPreviewItemArticle = styled.div`
 	margin-top: 12px;
@@ -41,4 +49,7 @@ export const BusinessPreviewItemArticle = styled.div`
 	font-family: "Roboto";
 	text-align: center;
 	line-height: 120%;
+	&.korean {
+    font-family: "S-CoreDream";
+  }
 `

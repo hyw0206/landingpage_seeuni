@@ -11,6 +11,10 @@ export const FooterWrapper = styled.div`
   @media (max-width: 960px) {
     margin-top: 330px;
   }
+    ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
 `;
 
 export const FooterContentWrapper = styled.div`
@@ -22,6 +26,8 @@ export const FooterLogoImg = styled.img`
   width: 208px;
   height: 43px;
   margin-right: 52px;
+  pointer-events: none; /* 마우스 이벤트를 차단 */
+  user-select: none;
 `;
 
 export const FooterTextWrapper = styled.div`

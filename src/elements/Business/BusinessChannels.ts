@@ -11,6 +11,10 @@ export const BusinessChannelsWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 525px;
+  ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
 `
 
 export const BusinessChannelsTitle = styled.div`

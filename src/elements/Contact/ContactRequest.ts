@@ -8,6 +8,10 @@ export const ContactRequestWrapper = styled.div`
   width: 100%;
   height: 730px;
   background-color: rgba(243, 234, 234, 1);
+  ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
 `;
 
 export const ContactRequestTitleText = styled.div`
@@ -28,7 +32,7 @@ export const ContactInputWrapper = styled.div`
 export const ContactRequestTextWrapper = styled.div`
   display: flex;
   margin-top: 19px;
-  color: rgba(130, 130, 130, 1);
+  color: #656565;
   font-size: 22px; 
   font-family: "Roboto";
 `;
@@ -41,11 +45,13 @@ export const ContactRequestInput = styled.input`
   width: 908px;
   padding: 10px;
   margin-top: 12px;
-  color: rgba(0, 0, 0, 0.4); 
   border: 1px solid rgba(0, 0, 0, 1);
   border-radius: 15px;
-  font-size: 24px;
+  font-size: 20px;
 
+   &::placeholder {
+    color: lightgrey;
+   }
 `;
 
 export const ContactRequestTextArea = styled.textarea`
@@ -53,11 +59,14 @@ export const ContactRequestTextArea = styled.textarea`
   height: 141px;
   padding: 10px;
   margin-top: 12px;
-  color: rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(0, 0, 0, 1); 
   border-radius: 15px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Roboto";
+
+  &::placeholder {
+    color: lightgrey;
+   }
 `;
 
 export const SubmitButton = styled.button`
@@ -69,6 +78,11 @@ export const SubmitButton = styled.button`
   background-color: rgba(237, 116, 218, 100);
   color: rgba(255, 255, 255, 1);
   font-size: 32px;
+  font-weight: 700;
+
+  &:hover{
+    background-color: black;
+  }
 `;
 
 export const ContactRequestFileInputWrapper = styled.div`

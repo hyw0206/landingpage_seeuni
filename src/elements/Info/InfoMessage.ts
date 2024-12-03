@@ -6,6 +6,10 @@ export const InfoMessageWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 498px;
+    ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
 `
 
 export const InfoMessageTtile = styled.div`
@@ -29,6 +33,9 @@ export const InfoMessageArticle = styled.div`
   letter-spacing: 0.1em; // 2.2px
   text-align: center;
   line-height: 26px;
+  &.korean {
+    font-family: "S-CoreDream";
+  }
 `
 export const InfoMessageArticleLine = styled.hr`
   margin-top: 12px;
@@ -40,6 +47,9 @@ export const InfoMessageWriter = styled.div`
   margin-top: 12px;
   font-size: 20px;
   font-family: "Roboto";
+  &.korean {
+    font-family: "S-CoreDream";
+  }
 `
 
 export const InfoMessageRank = styled.span`

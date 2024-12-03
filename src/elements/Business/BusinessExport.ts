@@ -13,6 +13,10 @@ export const BusinessExportWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 443px;
+  ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
 `
 
 export const BusinessExportTitle = styled.div`
@@ -34,6 +38,9 @@ export const BusinessExportArticleText = styled.div`
   font-family: "Roboto";
   font-style: italic;
   line-height: 120%;
+  &.korean {
+    font-family: "S-CoreDream";
+  }
 `
 
 export const BusinessExportArticleLine = styled.hr`

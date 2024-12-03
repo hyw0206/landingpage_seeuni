@@ -41,11 +41,15 @@ export default function InfoMessage({ language }: languageProps) {
     <Styled.InfoMessageWrapper>
       <Styled.InfoMessageTtile>{parse(titleData[language].InfoMessageTitle)}</Styled.InfoMessageTtile>
       <Styled.InfoMessageQuote src="/image/Info/InfoQuotes.png"/>
-      <Styled.InfoMessageArticle>
-      {parse(textData[language].InfoMessageText)}
+      <Styled.InfoMessageArticle
+        className={language === "Korean" ? "korean" : ""}
+      >
+        {parse(textData[language].InfoMessageText)}
       </Styled.InfoMessageArticle>
       <Styled.InfoMessageArticleLine />
-      <Styled.InfoMessageWriter>{parse(ceoData[language].InfoMessageCEO)}</Styled.InfoMessageWriter>
+      <Styled.InfoMessageWriter
+        className={language === "Korean" ? "korean" : ""}
+      >{parse(ceoData[language].InfoMessageCEO)}</Styled.InfoMessageWriter>
     </Styled.InfoMessageWrapper>
   )
 }
