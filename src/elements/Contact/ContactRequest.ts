@@ -98,6 +98,11 @@ export const ContactRequestFileSelectBtn = styled.div`
  border: 1px solid;
  text-align: center;
  background-color: #EFEFEF;
+
+ &:hover{
+  color: white;
+  background-color: gray;
+ }
 `;
 
 export const ContactRequestFileSelectText = styled.div`
