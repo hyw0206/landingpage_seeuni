@@ -86,6 +86,27 @@ export const SubmitButton = styled.button`
 `;
 
 export const ContactRequestFileInputWrapper = styled.div`
+  display: flex;
   text-align: left;
   margin-top: 10px;
 `;
+
+export const ContactRequestFileSelectBtn = styled.div`
+ width: 100%;
+ height: 25px;
+ padding-top: 3px;
+ border: 1px solid;
+ text-align: center;
+ background-color: #EFEFEF;
+
+ &:hover{
+  color: white;
+  background-color: gray;
+ }
+`;
+
+export const ContactRequestFileSelectText = styled.div`
+ margin-left: 10px;
+ margin-top: 3px;
+`;
+

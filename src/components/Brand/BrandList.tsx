@@ -3,137 +3,120 @@
 import * as Styled from "elements/Brand/BrandList";
 
 export default function BrandList() {
-  // const brandNumber = 16;
-
   const items = [
     {
-      "fileName": "daymellowLogo.png",
-      "width": "190",
-      "height": "90",
-      "label": `daymellow’
-      (데이멜로우)`,
-      "route": "/daymellow"
+      "fileName": "Brand14_Acwell.png",
+      "width": "100",
+      "height": "80",
+      "label": `Acwell
+      (아크웰)`,
     },
-
     {
-      "fileName": "dintoLogo.png",
-      "width": "150",
+      "fileName": "Brand15_AMOS.png",
+      "width": "120",
+      "height": "70",
+      "label": `AMOS
+      (아모스)`,
+    },
+    {
+      "fileName": "Brand5_APLB.png",
+      "width": "120",
+      "height": "90",
+      "label": `APLB
+      (에이피엘비)`,
+    },
+    {
+      "fileName": "BRAND3_BeautyOfJoseon.png",
+      "width": "500",
+      "height": "80",
+      "label": `Beauty Of Joseon
+      (조선미녀)`,
+    },
+    {
+      "fileName": "Brand12_Coralhaze.png",
+      "width": "140",
+      "height": "80",
+      "label": `Coralhaze 
+      (코랄헤이즈)`,
+    },
+    {
+      "fileName": "Brand4_Demar3.png",
+      "width": "120",
+      "height": "90",
+      "label": `Demar3
+      (디마르)`,
+    },
+    {
+      "fileName": "Brand1_Dinto.png",
+      "width": "180",
       "height": "90",
       "label": `Dinto 
       (딘토)`,
-      "route": "/dinto"
+      "route": "/Dinto"
     },
-
     {
-      "fileName": "medipeelLogo.png",
-      "width": "190",
+      "fileName": "Brand13_Giverny.png",
+      "width": "150",
       "height": "80",
-      "label": `MEDIPEEL+
-      (메디필)`,
+      "label": `Giverny
+      (지베르니)`,
     },
-
     {
-      "fileName": "aplbLogo.png",
-      "width": "160",
-      "height": "90",
-      "label": `APLB
-      (에이필엘비)`,
+      "fileName": "Brand9_Haruharu.png",
+      "width": "120",
+      "height": "80",
+      "label": `Haruharu
+      (하루하루원더)`,
     },
-
     {
-      "fileName": "lebelageLogo.png",
-      "width": "180",
-      "height": "90",
+      "fileName": "Brand8_Hwasa.png",
+      "width": "110",
+      "height": "80",
+      "label": `Hwasa
+      (화사)`,
+    },
+    {
+      "fileName": "Brand10_Koy.png",
+      "width": "120",
+      "height": "70",
+      "label": `Koy 
+      (코이)`,
+    },
+    {
+      "fileName": "Brand16_LEBELAGE.png",
+      "width": "200",
+      "height": "80",
       "label": `LEBELAGE
       (르베라쥬)`,
     },
-
     {
-      "fileName": "uiqLogo.png",
-      "width": "130",
+      "fileName": "Brand7_Midha.png",
+      "width": "120",
+      "height": "70",
+      "label": `Midha
+      (미다)`,
+    },
+    {
+      "fileName": "Brand11_persent.png",
+      "width": "60",
+      "height": "80",
+      "label": `persent science
+      (퍼센트사이언스)`,
+    },
+    {
+      "fileName": "Brand6_Sudee.png",
+      "width": "140",
       "height": "90",
-      "label": `UIQ
-      (유이크)`,
+      "label": `Sudee
+      (수다이)`,
     },
-
     {
-      "fileName": "herbloom.png",
-      "width": "180",
-      "height": "70",
-      "label": `Herbloom
-      (허블룸)`,
-    },
-
-    {
-      "fileName": "vtcosmeticsLogo.png",
-      "width": "180",
-      "height": "80",
+      "fileName": "Brand2_VTCosmetics.png",
+      "width": "150",
+      "height": "90",
       "label": `VT COSMETICS
-      (VT 코스메틱스)`,
-    },
-
-    {
-      "fileName": "heavymakeupLogo.png",
-      "width": "200",
-      "height": "80",
-      "label": `HEAVY MAKEUP
-      (헤비 메이크업)`,
-    },
-
-    {
-      "fileName": "herbloom.png",
-      "width": "180",
-      "height": "70",
-      "label": `Dinto 
-      (딘토)`,
-    },
-
-    {
-      "fileName": "vtcosmeticsLogo.png",
-      "width": "180",
-      "height": "80",
-      "label": `Dinto 
-      (딘토)`,
-    },
-
-    {
-      "fileName": "heavymakeupLogo.png",
-      "width": "200",
-      "height": "80",
-      "label": `Dinto 
-      (딘토)`,
-    },
-
-    {
-      "fileName": "heavymakeupLogo.png",
-      "width": "200",
-      "height": "80",
-      "label": `Dinto 
-      (딘토)`,
-    },
-
-    {
-      "fileName": "heavymakeupLogo.png",
-      "width": "200",
-      "height": "80",
-      "label": `Dinto 
-      (딘토)`,
-    },
-
-    {
-      "fileName": "heavymakeupLogo.png",
-      "width": "200",
-      "height": "80",
-      "label": `Dinto 
-      (딘토)`,
-    },
-
-    {
-      "fileName": "heavymakeupLogo.png",
-      "width": "200",
-      "height": "80",
-      "label": `Dinto 
-      (딘토)`,
+      (브이티 코스메틱)`,
+      "route": "/VTCosmetics"
     }
   ]
 
@@ -150,9 +133,10 @@ export default function BrandList() {
                 onDragStart={(e) => e.preventDefault()}/>
             </Styled.BrandListItem>
             <Styled.BrandListLabel style={{
+              textAlign: "center",
               height: "75px",
-              fontSize: "24px",
-              fontWeight: "500",
+              fontSize: "23px",
+              fontWeight: "600",
               marginTop: "15px",
               lineHeight: "38px",
               border: "none"
