@@ -62,7 +62,7 @@ export default function InfoAbout({ language }: languageProps) {
         <span style="font-weight: 500; color: #ED74DA";> authenticity of K-beauty.</span>`
     },
     "Korean": {
-      "InfoAboutText": `<span style="font-weight: 500; color: #ED74DA";>Seeuni</span>는 <span style="font-weight: 500; color: #ED74DA";>"See You and I"</span>에서 영감을 받아 탄생한 이름입니다. 이는 한국의 아름다움을 전 세계 소비자와 함께 경험하고자 하는 브랜드의 의지를 담고 있습니다. Seeuni는 한국 화장품의 고유한 가치를 세상에 선보이며, 고객과 함께 <span style="font-weight: 500; color: #ED74DA";>한국의 미</span>를 발견하고 경험하는 여정을 시작합니다.`
+      "InfoAboutText": `<span style="font-weight: 300;"><span style="font-weight: 500; color: #ED74DA";>Seeuni</span>는 <span style="font-weight: 500; color: #ED74DA";>"See You and I"</span>에서 영감을 받아 탄생한 이름입니다. 이는 한국의 아름다움을 전 세계 소비자와 함께 경험하고자 하는 브랜드의 의지를 담고 있습니다. Seeuni는 한국 화장품의 고유한 가치를 세상에 선보이며, 고객과 함께 <span style="font-weight: 500; color: #ED74DA";>한국의 미</span>를 발견하고 경험하는 여정을 시작합니다.</span>`
     }
   }
 
