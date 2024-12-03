@@ -44,8 +44,6 @@ export const BrandListItem = styled.div`
   :hover {
     border: none;
   }
-    pointer-events: none; /* 마우스 이벤트를 차단 */
-  user-select: none;
 `;
 
 // 이미지 스타일링
@@ -54,6 +52,8 @@ export const BrandListImage = styled.img`
   height: ${(props) => props.height + 'px'};
   object-fit: contain;
   margin-bottom: 8px;
+  pointer-events: none; /* 마우스 이벤트를 차단 */
+  user-select: none;
 `;
 
 // 라벨 스타일링
