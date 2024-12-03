@@ -24,7 +24,7 @@ export default function ODMInfo({ language }: languageProps) {
         success across diverse markets.`
     },
     "Korean": {
-      "ODMInfoText": "각국의 소비자 요구에 맞춰 맞춤형 화장품을 제작하는 ODM 서비스를 제공합니다. <br /> Seeuni는 고품질의 제품을 합리적인 가격에 제공하며, 고객사와 협력하여 성공적인 <br /> 브랜드를 만들어 나가고 있습니다."
+      "ODMInfoText": `<br/>각국의 소비자 요구에 맞춰 맞춤형 화장품을 제작하는 <span style="font-weight: 500;">ODM 서비스</span>를 제공합니다. <br /> Seeuni는 <span style="font-weight: 500;">고품질</span>의 제품을 합리적인 가격에 제공하며, 고객사와 협력하여 성공적인 <br /> 브랜드를 만들어 나가고 있습니다.`
     }
   }
 
@@ -35,7 +35,7 @@ export default function ODMInfo({ language }: languageProps) {
       </Styled.ODMInfoTitleWrapper>
       <Styled.ODMInfoDetailWrapper>
         <Styled.ODMArticleImage src="/image/ODM/ODMImage.png" />
-        <Styled.ODMArticleLine />
+        {/* <Styled.ODMArticleLine /> */}
         <Styled.ODMInfoArticleTextWrapper>
           <Styled.ODMInfoArticleText>{parse(textData[language].ODMInfoText)}
           </Styled.ODMInfoArticleText>

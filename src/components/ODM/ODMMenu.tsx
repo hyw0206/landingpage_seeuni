@@ -20,7 +20,7 @@ export default function ODMMenu({ language }: languageProps) {
           <br /> Our partnerships bring exceptional beauty solutions to the global market.`
     },
     "Korean": {
-      "ODMMenuText": `우리는 K-뷰티 제조 분야의 선도 기업들과 협력하여 최고 품질의 제품을 제공합니다.
+      "ODMMenuText": `<br/>우리는 K-뷰티 제조 분야의 선도 기업들과 협력하여 최고 품질의 제품을 제공합니다.
       다양한 분야의 최고 전문가들과 함께 혁신과 탁월함을 보장합니다. <br />
       이러한 파트너십을 통해 세계 시장에 뛰어난 뷰티 솔루션을 선보이고 있습니다.`
     }

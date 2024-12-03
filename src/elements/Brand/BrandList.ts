@@ -26,7 +26,8 @@ export const BrandListInner = styled.div`
 
 export const BrandListBox = styled.div`
   :hover {
-  border: 1px solid black;
+  border: 3px solid #ED74DA;
+  border-radius: 5px;
   }
 `;
 
