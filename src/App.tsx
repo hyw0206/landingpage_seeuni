@@ -7,13 +7,13 @@ import Brand from "components/Brand/Brand";
 import Contact from "components/Contact/Contact";
 import Footer from "components/Footer/Footer";
 import { useState } from "react";
-import {
-  FullpageContainer,
-  FullpageSection,
-} from '@shinyongjun/react-fullpage';
-import '@shinyongjun/react-fullpage/css';
+// import {
+//   FullpageContainer,
+//   FullpageSection,
+// } from '@shinyongjun/react-fullpage';
+// import '@shinyongjun/react-fullpage/css';
 function App() {
-  const [activeIndex, setActiveIndex] = useState<number>(0);
+  // const [activeIndex, setActiveIndex] = useState<number>(0);
   const [language, setLanguage] = useState<"English" | "Korean">("English");
   return (
     <>

@@ -98,6 +98,7 @@ export default function BusinessChannels({language}: languageProps) {
           })
         }
       </Styled.BusinessChannelsMap>
+      <Styled.BusinessChannelsLine />
     </Styled.BusinessChannelsWrapper>
   )
 }
