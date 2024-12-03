@@ -7,6 +7,10 @@ export const ContactRequestWrapper = styled.div`
   width: 100%;
   height: 682px;
   background-color: rgba(243, 234, 234, 1);
+  ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
 `;
 
 export const ContactRequestTitleText = styled.div`

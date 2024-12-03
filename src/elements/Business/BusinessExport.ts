@@ -13,6 +13,10 @@ export const BusinessExportWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 443px;
+  ::selection {
+    background-color: #ED74DA;
+    color: white;
+  }
 `
 
 export const BusinessExportTitle = styled.div`
