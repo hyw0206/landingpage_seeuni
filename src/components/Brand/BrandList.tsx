@@ -5,6 +5,36 @@ import * as Styled from "elements/Brand/BrandList";
 export default function BrandList() {
   const items = [
     {
+      "fileName": "Brand1_Dinto.png",
+      "width": "180",
+      "height": "90",
+      "label": `Dinto 
+      (딘토)`,
+      "route": "/Dinto"
+    },
+    {
+      "fileName": "Brand2_VTCosmetics.png",
+      "width": "150",
+      "height": "90",
+      "label": `VT COSMETICS
+      (브이티 코스메틱)`,
+      "route": "/VTCosmetics"
+    },
+    {
+      "fileName": "BRAND3_BeautyOfJoseon.png",
+      "width": "500",
+      "height": "80",
+      "label": `Beauty Of Joseon
+      (조선미녀)`,
+    },
+    {
+      "fileName": "Brand4_Demar3.png",
+      "width": "120",
+      "height": "90",
+      "label": `Demar3
+      (디마르)`,
+    },
+    {
       "fileName": "Brand14_Acwell.png",
       "width": "100",
       "height": "80",
@@ -25,34 +55,13 @@ export default function BrandList() {
       "label": `APLB
       (에이피엘비)`,
     },
-    {
-      "fileName": "BRAND3_BeautyOfJoseon.png",
-      "width": "500",
-      "height": "80",
-      "label": `Beauty Of Joseon
-      (조선미녀)`,
-    },
+
     {
       "fileName": "Brand12_Coralhaze.png",
       "width": "140",
       "height": "80",
       "label": `Coralhaze 
       (코랄헤이즈)`,
-    },
-    {
-      "fileName": "Brand4_Demar3.png",
-      "width": "120",
-      "height": "90",
-      "label": `Demar3
-      (디마르)`,
-    },
-    {
-      "fileName": "Brand1_Dinto.png",
-      "width": "180",
-      "height": "90",
-      "label": `Dinto 
-      (딘토)`,
-      "route": "/Dinto"
     },
     {
       "fileName": "Brand13_Giverny.png",
@@ -110,14 +119,7 @@ export default function BrandList() {
       "label": `Sudee
       (수다이)`,
     },
-    {
-      "fileName": "Brand2_VTCosmetics.png",
-      "width": "150",
-      "height": "90",
-      "label": `VT COSMETICS
-      (브이티 코스메틱)`,
-      "route": "/VTCosmetics"
-    }
+
   ]
 
   return (

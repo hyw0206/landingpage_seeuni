@@ -40,9 +40,9 @@ export const ODMMenuTextWrapper = styled.div`
 
 export const ODMMenuText = styled.p`
   font-size: 23px;
-  font-weight: 300;
+  font-weight: 200;
   text-align: left;
-  line-height: 27px;
+  line-height: 35px;
   color: #46454A;
 `;
 
@@ -61,4 +61,22 @@ export const ODMMenuPartnerBoxImage = styled.img`
   margin-right: 40px;
   width: ${(props) => props.width + 'px'};
   height: ${(props) => props.height + 'px'};
-`
+`;
+
+export const ODMMenuPartnerTextBox = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 110px;
+  background-color: #F9B9FF;
+`;
+
+export const ODMMenuPartnerText = styled.p`
+  width: 271px;
+  height: 51px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 47px;
+  color: rgba(0, 0, 0, 0.5);
+`;
