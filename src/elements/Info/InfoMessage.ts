@@ -31,7 +31,7 @@ export const InfoMessageArticle = styled.div`
   font-family: "Roboto";
   font-style: italic;
   letter-spacing: 0.1em; // 2.2px
-  text-align: center;
+  text-align: left;
   line-height: 26px;
   &.korean {
     font-family: "S-CoreDream";

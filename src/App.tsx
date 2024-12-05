@@ -7,49 +7,31 @@ import Brand from "components/Brand/Brand";
 import Contact from "components/Contact/Contact";
 import Footer from "components/Footer/Footer";
 import { useState } from "react";
-// import {
-//   FullpageContainer,
-//   FullpageSection,
-// } from '@shinyongjun/react-fullpage';
-// import '@shinyongjun/react-fullpage/css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 function App() {
-  // const [activeIndex, setActiveIndex] = useState<number>(0);
   const [language, setLanguage] = useState<"English" | "Korean">("English");
+
   return (
-    <>
-      <Header
-        language={language}
-        setLanguage={setLanguage}
-      />
-      {/* <FullpageContainer
-        activeIndex={activeIndex}
-        setActiveIndex={setActiveIndex}
-        transitionDuration={500}
-      > 
-      <FullpageSection> */}
-        <Info
-          language={language}
-        />
-      {/* </FullpageSection>
-      <FullpageSection> */}
-        <Business language={language}/>    
-      {/* </FullpageSection>
-      <FullpageSection> */}
-        <Brand language={language}/>
-      {/* </FullpageSection>
-      <FullpageSection> */}
-        <ODM language={language}/>
-      {/* </FullpageSection>
-      <FullpageSection> */}
-        {/* <div style={{display: "flex", flexDirection: "column", width: "100%"}}> */}
-          <Contact
-            language={language}
-          />
-          <Footer />
-        {/* </div>
-      </FullpageSection>
-    </FullpageContainer> */}
-    </>
+    <Router>
+      <Header language={language} setLanguage={setLanguage} />
+      <div>
+        <Info language={language} />
+      </div>
+      <div>
+        <Business language={language} />
+      </div>
+      <div>
+        <Brand language={language} />
+      </div>
+      <div>
+        <ODM language={language} />
+      </div>
+      <div>
+        <Contact language={language} />
+      </div>
+      <Footer />
+    </Router>
   );
 }
 
