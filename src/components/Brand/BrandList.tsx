@@ -21,7 +21,7 @@ export default function BrandList() {
       "route": "/VTCosmetics"
     },
     {
-      "fileName": "BRAND3_BeautyOfJoseon.png",
+      "fileName": "Brand3_BeautyOfJoseon.webp",
       "width": "500",
       "height": "80",
       "label": `Beauty Of Joseon
