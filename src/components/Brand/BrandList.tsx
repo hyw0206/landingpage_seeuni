@@ -24,21 +24,21 @@ export default function BrandList() {
       "fileName": "Brand3_BeautyOfJoseon.webp",
       "width": "500",
       "height": "80",
-      "label": `Beauty Of Joseon
+      "label": `Beauty of Joseon
       (조선미녀)`,
     },
     {
       "fileName": "Brand4_Demar3.png",
       "width": "120",
       "height": "90",
-      "label": `Demar3
+      "label": `DEMAR3
       (디마르)`,
     },
     {
       "fileName": "Brand14_Acwell.png",
       "width": "100",
       "height": "80",
-      "label": `Acwell
+      "label": `acwell
       (아크웰)`,
     },
     {
@@ -67,21 +67,21 @@ export default function BrandList() {
       "fileName": "Brand13_Giverny.png",
       "width": "150",
       "height": "80",
-      "label": `Giverny
+      "label": `GIVERNY
       (지베르니)`,
     },
     {
       "fileName": "Brand9_Haruharu.png",
       "width": "120",
       "height": "80",
-      "label": `Haruharu
+      "label": `haruharu wonder
       (하루하루원더)`,
     },
     {
       "fileName": "Brand8_Hwasa.png",
       "width": "110",
       "height": "80",
-      "label": `Hwasa
+      "label": `HWASA
       (화사)`,
     },
     {
@@ -102,14 +102,14 @@ export default function BrandList() {
       "fileName": "Brand7_Midha.png",
       "width": "120",
       "height": "70",
-      "label": `Midha
+      "label": `MIDHA
       (미다)`,
     },
     {
       "fileName": "Brand11_persent.png",
       "width": "60",
       "height": "80",
-      "label": `persent science
+      "label": `Persent Science
       (퍼센트사이언스)`,
     },
     {
