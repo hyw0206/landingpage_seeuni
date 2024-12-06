@@ -62,13 +62,16 @@ export default function ODMMenu({ language }: languageProps) {
       <Styled.ODMMenuTitleWrapper>
         <Styled.ODMMenuTitle>{parse(titleData[language].ODMMenuTitle)}</Styled.ODMMenuTitle>
       </Styled.ODMMenuTitleWrapper>
-      <Styled.ODMMenuPartnerBox>
+      <Styled.ODMMenuPartnerTextBox>
+        <Styled.ODMMenuPartnerText>updating soon</Styled.ODMMenuPartnerText>
+      </Styled.ODMMenuPartnerTextBox>
+      {/* <Styled.ODMMenuPartnerBox> 
         {items.map((item) => (
           <Styled.ODMMenuPartnerBoxImage src={"/image/ODM/" + item.fileName}
             width={item.width} height={item.height}
             style={{ margin: item.margin }} />
         ))}
-      </Styled.ODMMenuPartnerBox>
+      </Styled.ODMMenuPartnerBox> */}
       <Styled.ODMMenuTextWrapper>
         <Styled.ODMMenuText>{parse(textData[language].ODMMenuText)}
         </Styled.ODMMenuText>

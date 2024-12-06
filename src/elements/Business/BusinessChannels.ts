@@ -36,6 +36,8 @@ export const BusinessChannelsPin = styled.img<BusinessChannelsPinProps>`
   position: absolute;
   top: ${(props) => props.top + 'px'};
   left: ${(props) => props.left + 'px'};
+  pointer-events: none; /* 마우스 이벤트를 차단 */
+  user-select: none;
 `
 export const BusinessChannelsLine = styled.hr`
   width: 215px;
