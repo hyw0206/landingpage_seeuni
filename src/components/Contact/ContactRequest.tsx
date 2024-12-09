@@ -124,16 +124,16 @@ export default function Request({ language }: languageProps) {
       "ContactRequestTitle": "요청란",
 
       "ContactRequestCompanyTitle": "회사명",
-      "ContactRequestCompanyPlaceholder": "여기에 회사명을 입력해 주세요",
+      "ContactRequestCompanyPlaceholder": "회사명을 입력해 주세요",
 
       "ContactRequestEmailTitle": "이메일",
-      "ContactRequestEmailPlaceholder": "여기에 이메일을 입력해 주세요",
+      "ContactRequestEmailPlaceholder": "이메일을 입력해 주세요",
 
       "ContactRequestSubjcetTitle": "제목",
-      "ContactRequestSubjcetPlaceholder": "여기에 제목을 입력해 주세요",
+      "ContactRequestSubjcetPlaceholder": "제목을 입력해 주세요",
 
       "ContactRequestMessageTitle": "내용",
-      "ContactRequestMessagePlaceholder": "여기에 내용을 입력해 주세요",
+      "ContactRequestMessagePlaceholder": "내용을 입력해 주세요",
 
       "ContactRequestAddFileText": "선택된 파일이 없습니다.",
       "ContactRequestAddFileBtn": "파일 선택",
