@@ -28,32 +28,38 @@ export default function ODMMenu({ language }: languageProps) {
 
   const items = [
     {
+      "fileName": "encLogo.png",
+      "width": "140",
+      "height": "80",
+      "margin": "14px 0px 14px 0px"
+    },
+    {
       "fileName": "kolmarLogo.png",
-      "width": "169",
-      "height": "82",
+      "width": "160",
+      "height": "80",
       "margin": "14px 48px 14px 45px"
     },
 
     {
       "fileName": "cosmeccaLogo.png",
-      "width": "290",
-      "height": "82",
+      "width": "260",
+      "height": "70",
       "margin": "14px 48px 14px 0px"
     },
 
     {
-      "fileName": "cosmaxLogo.png",
-      "width": "263",
-      "height": "82",
+      "fileName": "ngcLogo.png",
+      "width": "120",
+      "height": "56",
       "margin": "15px 48px 14px 0px"
     },
 
     {
-      "fileName": "encLogo.png",
-      "width": "104",
-      "height": "82",
-      "margin": "14px 48px 14px 0px"
-    }
+      "fileName": "cosmaxLogo.png",
+      "width": "50",
+      "height": "80",
+      "margin": "15px 48px 14px 0px"
+    },
   ]
 
 
@@ -62,16 +68,16 @@ export default function ODMMenu({ language }: languageProps) {
       <Styled.ODMMenuTitleWrapper>
         <Styled.ODMMenuTitle>{parse(titleData[language].ODMMenuTitle)}</Styled.ODMMenuTitle>
       </Styled.ODMMenuTitleWrapper>
-      <Styled.ODMMenuPartnerTextBox>
+      {/* <Styled.ODMMenuPartnerTextBox>
         <Styled.ODMMenuPartnerText>updating soon</Styled.ODMMenuPartnerText>
-      </Styled.ODMMenuPartnerTextBox>
-      {/* <Styled.ODMMenuPartnerBox> 
+      </Styled.ODMMenuPartnerTextBox> */}
+      <Styled.ODMMenuPartnerBox> 
         {items.map((item) => (
           <Styled.ODMMenuPartnerBoxImage src={"/image/ODM/" + item.fileName}
             width={item.width} height={item.height}
             style={{ margin: item.margin }} />
         ))}
-      </Styled.ODMMenuPartnerBox> */}
+      </Styled.ODMMenuPartnerBox>
       <Styled.ODMMenuTextWrapper>
         <Styled.ODMMenuText>{parse(textData[language].ODMMenuText)}
         </Styled.ODMMenuText>
