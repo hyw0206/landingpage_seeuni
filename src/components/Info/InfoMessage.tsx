@@ -8,24 +8,20 @@ export default function InfoMessage({ language }: languageProps) {
       "InfoMessageTitle": "Korean Beauty to the World."
     },
     "Korean": {
-      "InfoMessageTitle": "대표 인사말"
+      "InfoMessageTitle": "한국의 아름다움을 세계에 알리다."
     },
   }
   const textData = {
     "English": {
-      "InfoMessageText": `Seeuni was founded to share the true beauty of Korean cosmetics with consumers around the world. 
-        Since entering the cosmetics industry in 2009, 
-        I have accumulated extensive experience and gained deep insights into the uniqueness of K-beauty.<br />
-        Now, through Seeuni, I am dedicated to showcasing the exceptional quality of Korean beauty<br />
-        products on a global scale.<br />
-        We promise not only to export products but to deliver the true essence of Korean cosmetics.<br />
-        Join us as we explore new possibilities for K-beauty.`
+      "InfoMessageText": `SEEUNI was founded to bring the essence of Korean cosmetics to the world.<br />
+      With experience accumulated in the beauty industry since 2009,<br /> we are dedicated to showcasing the excellence of Korean cosmetics.<br />
+      Invest in the limitless potential of K-beauty. We are seeking partners to grow together.
+      `
     },
     "Korean": {
-      "InfoMessageText": `Seeuni는 한국 화장품의 진정한 아름다움을 세계 각국의 소비자들과 함께 나누기 위해 시작한 회사입니다. 
-      저는 2009년부터 화장품 업계에서 쌓아온 경험을 바탕으로, <br /> K뷰티의 특별함을 전 세계에 전달하고자 Seeuni를 설립했습니다. 
-      Seeuni는 단순한 수출을 넘어, <br /> 한국 화장품의 진가와 가치를 글로벌 무대에 선보이겠다는 약속을 지키겠습니다. 
-      <br />고객 여러분과 함께 한국 화장품의 새로운 가능성을 열어가고 싶습니다.`
+      "InfoMessageText": `씨유니는 한국 화장품의 본질을 세계에 전하기 위해 시작되었습니다.<br />
+      2009년부터 뷰티 산업에서 쌓아온 경험을 바탕으로,<br /> 한국 화장품의 우수성을 알리는 데 집중하고 있습니다.<br />
+      K-뷰티의 무한한 가능성에 투자하세요. 함께 성장할 파트너를 찾고 있습니다.`
     },
   }
   const ceoData = {

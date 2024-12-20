@@ -77,20 +77,24 @@ export const HeaderItemText = styled.div`
 
 export const HeaderCountryWrapper = styled.div`
   display: flex;
-  margin-top: 25px;
+  margin-top: 20px;
 `
 export const HeaderCountryLogo = styled.img`
   width: 24px;
   height: 24px;
 `
 export const HeaderCountryText = styled.div`
+  position: absolute;
+  top: 82px;
   font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   cursor: pointer;
   user-select: none;
   margin-bottom: 2px;
-  
+  &:last-child {
+    top: 100px;
+  }
 `
 
 
@@ -98,7 +102,7 @@ export const HeaderCountryItem = styled.div`
   
   padding: 0 11px;
   img {
-    margin-top: 22px;
+    margin-top: 20px;
     width: 29px;
     height: 19px;
   }

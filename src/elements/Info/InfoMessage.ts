@@ -5,7 +5,7 @@ export const InfoMessageWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 498px;
+  height: 430px;
     ::selection {
     background-color: #ED74DA;
     color: white;
@@ -24,8 +24,9 @@ export const InfoMessageQuote = styled.img`
 `
 
 export const InfoMessageArticle = styled.div`
-  width: 950px;
+  width: 850px;
   margin-top: 20px;
+  margin-left:70px;
   font-size: 18px;
   font-weight: 300;
   font-family: "Roboto";

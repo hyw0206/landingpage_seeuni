@@ -14,14 +14,19 @@ export default function BusinessExport({language}: languageProps) {
 
   const textData = {
     "English": {
-      "BusinessExportText": `Seeuni is committed to sharing the excellence of Korean beauty worldwide. 
-      By leading the K-beauty trends in markets such as Russia, the United States, Indonesia, Japan, Vietnam, South Africa, and Brazil, 
-      Seeuni helps global consumers discover the uniqueness of Korean beauty.`
+      "BusinessExportText": `SEEUNI shares the beauty of Korea<br />  
+      with the world, leading K-beauty trends<br />  
+      in global markets such as Russia,<br />  
+      the United States, Indonesia, Japan,<br />  
+      Vietnam, South Africa, and Brazil.`
     },
     "Korean": {
-      "BusinessExportText": `Seeuni는 한국 뷰티의 우수성을 전 세계에 알리는 데 전념하고 있습니다. <br />
-      러시아, 미국, 인도네시아, 일본, 베트남, 남아프리카공화국, 브라질 등 다양한 <br /> 시장에서 K-뷰티 트렌드를 선도하며, 
-      전 세계 소비자들이 한국 뷰티의 독창성을 발견할 수 있도록 돕고 있습니다.`
+      "BusinessExportText": `씨유니는 한국의 아름다움을<br /> 
+      전 세계에 전하며,<br />   
+      러시아, 미국, 인도네시아, 일본,<br />   
+      베트남, 남아공, 브라질 등<br />   
+      글로벌 시장에서<br />   
+      K-뷰티 트렌드를 이끌고 있습니다.`
     }
   }
 
